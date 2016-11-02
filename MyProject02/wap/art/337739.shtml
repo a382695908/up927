@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0"/>
+<title>11b_母婴知识_好宝宝网</title>
+<meta name="Keywords" content="_11b_母婴知识好宝宝网"/>   
+<meta name="Description" content="11b_母婴知识_好宝宝网"/>  
+<link href="/wap/html5/main.css" rel="stylesheet" type="text/css" />
+<script src="/wap/js/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="div_title">
+<h2><a href="/wap/index.html" name="gototop">首页</a></h2>
+<h2> &nbsp; > &nbsp; </h2>
+<h2><a href="/wap/list.aspx?a_t=2">母婴知识</a></h2>
+</div>
+
+<div class="content_div"><h3>11b</h3><hr />
+<p style="text-align: center">
+
+</p>
+<p>&nbsp;11b</p>
+
+<div>
+    欢迎访问<strong>好宝宝网 www.up927.com</strong>，</br>
+    浏览更多好玩、实用的文章吧~
+</div>
+<div class="ad_div">
+<!--#include virtual="/wap/userControl/wap_adv.html"--> 
+</div>
+
+
+<!--相关文章-->
+
+</div>
+
+
+
+<div class="foot_div">
+<div class="foot_flower">
+<a href="/wap/index.html">首页</a>&nbsp;-&nbsp;<a href="#gototop">回顶部</a>
+</div>
+</div>
+<div class="footer mt10 tc">
+  <!--#include virtual="/wap/userControl/wap_foot.html"--> 
+</div>
+
+<!--百度统计代码-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?138a328660e33c71bad7bfcceaa1e08f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!--百度提交代码-->
+<script>
+    (function() {
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+</body>
+</html>

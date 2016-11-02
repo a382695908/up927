@@ -1,0 +1,13 @@
+<div class="xiangguan" style="display:$xiangguanShow;">
+<h3>相关文章</h3>
+    <ul>
+       <!--#include file="$_tagUrl"--> 
+    </ul>
+ </div>
+ 
+<div style="display:$xiangguanShow;" align="left">
+<font style="font-size:18px; color:#36648B; font-weight:bold;">相关文章</font>
+<ul>
+    <!--#include file="$_tagUrl"--> 
+</ul>
+</div>

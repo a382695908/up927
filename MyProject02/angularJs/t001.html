@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<script src="http://www.up927.com/js/jquery-1.8.0.min.js"></script>
+</head>
+<style>
+*{ margin:0; padding:0;}
+ul{ list-style:none; border-bottom:4px solid #f60; height:30px; margin-top:20px;}
+a{ display:inline-block; float:left; width:120px; height:30px; text-decoration:none; font-size:14px; color:#003366; background:#ccc; text-align:center; line-height:30px; }
+a.on, a:hover{ background:#f60; height:40px; line-height:40px; margin-top:-10px; color:#fff;}
+</style>
+<script>
+//    window.onload = function() {
+//        var aa = document.getElementsByTagName('a');
+//        for (var i = 0; i < aa.length; i++) {
+//            aa[i].onmouseover = function() {
+//                clearInterval(this.time);
+//                var This = this;
+//                This.time = setInterval(function() {
+//                    This.style.width = This.offsetWidth + 1 + "px";
+//                    if (This.offsetWidth >= 140) {
+//                        This.style.width = "140px";
+//                        clearInterval(This.time);
+//                    }
+//                }, 3);
+
+//            }
+
+//            aa[i].onmouseout = function() {
+//                clearInterval(this.time);
+//                var This = this;
+//                This.time= setInterval(function() {
+//                    This.style.width = This.offsetWidth - 1 + "px";
+//                    if (This.offsetWidth <= 120) {
+//                        This.style.width = "120px";
+//                        clearInterval(This.time);
+//                    }
+//                }, 3);
+//            }
+//        }
+    //    }
+
+    $(function() {
+        $("a").hover(
+        function() {
+            $(this).stop().animate({ "width": "160px" }, 200)
+        },
+        function() {
+            $(this).stop().animate({ "width": "120px" }, 200)
+        })
+    })
+
+</script>
+<body>
+
+<ul>
+	<li><a class="on" href="#" >首    页</a></li>
+    <li><a href="#">健康咨询</a></li>
+    <li><a href="#">服务消息</a></li>
+    <li><a href="#">新闻浏览</a></li>
+    <li><a href="#">百度百科</a></li>
+</ul>
+
+ <style>
+    .triangle{
+      width: 0;
+      height: 0;
+      border:50px transparent solid; /*这里我们将元素的边框宽度设置为50px，transparent表示边框颜色是透明的，solid表示边框是实线的*/
+      border-top-color: black;  /*这里我们仅将上边框的颜色设置为黑色，众所周知，css后面的样式代码会覆盖之前的相同的样式代码，至于其他三边的还是透明色*/
+      /*border-bottom-color: black; /*这里设置底部边框色为黑色*/
+      border-left-color: black;  /*这里设置左边边框色为黑色*/
+      border-right-color:black; /*这里设置右边边框色为黑色*/
+  }
+  </style>
+  <div class="triangle"></div>
+  
+  <style>
+    .test-div{
+        position: relative;  /*日常相对定位*/
+        width:150px;
+        height: 36px;
+        border:black 1px solid;
+        border-radius:5px;
+        background: rgba(245,245,245,1)
+    }
+    .test-div:before,.test-div:after{
+        content: "";  /*:before和:after必带技能，重要性为满5颗星*/
+        display: block;
+        position: absolute;  /*日常绝对定位*/
+        top:8px;
+        width: 0;
+        height: 0;
+        border:6px transparent solid;
+    }
+    .test-div:before{
+        left:-11px;
+        border-right-color: rgba(245,245,245,1);
+        z-index:1
+    }
+    .test-div:after{
+        left:-12px;
+        border-right-color: rgba(0,0,0,1);
+        z-index: 0
+    }
+  </style>
+  <div class="test-div"></div>
+  
+  <style>
+    .bor{ border:50px solid transparent; border-left-color:#ccc; }
+  </style>
+  <div class="bor"></div>
+  
+  <script src="js/event.js"></script>
+  <div id="box">
+    <input type="button" id="btn" value="001"/>
+    <input type="button" id="btn2" value="002"/>
+    <a id="go" href="http://www.baidu.com" target="_blank">百度</a>
+  </div>
+  <script>
+      
+      function showMessage(event) {
+          alert("Hello");
+          event.stopPropagation();
+      }
+      function showBox() {
+          alert("This is box!");
+      }
+      var btn = document.getElementById("btn");
+
+      eventUtil.addEvent(btn, "click", function(event) {
+          event = eventUtil.getEvent(event);
+          //alert(eventUtil.getEvent(event));
+          eventUtil.stopPropagation(event); 
+      });
+      //eventUtil.removeEvent(btn, "click", showMessage);
+
+      var box = document.getElementById("box");
+      eventUtil.addEvent(box, "click", showBox);
+
+      var go = document.getElementById("go");
+      eventUtil.addEvent(go, 'click', function(event) {
+          eventUtil.preventDefault(event);
+      });
+  </script>
+  
+  <br/><br/>
+  <style>
+    #panelAll{ width:300px; height:200px; position:absolute; border:1px solid #333;}
+    #login{ height:50px; background:#ccc; cursor:move;}
+  </style>
+  
+  <div id="panelAll">
+    <div id="login">登录</div>
+  </div>
+  
+    <script>
+        var panelAll = document.getElementById('panelAll');
+    var login = document.getElementById('login');
+    login.onmousedown = Drag;
+    function Drag() {
+        var initX = event.clientX - panelAll.offsetLeft;
+        var initY = event.clientY - panelAll.offsetTop;
+
+        document.onmousemove = function(event) {
+            event = event || window.event;
+            var winW = document.documentElement.clientWidth || document.body.clientWidth;
+            var winH = document.documentElement.clientHeight || document.body.clientHeight;
+
+            var maxLeft = winW - panelAll.offsetWidth;
+            var maxTop = winH - panelAll.offsetHeight;
+
+            var l = event.clientX - initX;
+            var t = event.clientY - initY;
+
+            if (l < 0) {
+                l = 0;
+            }
+            else if (l > maxLeft) {
+                l = maxLeft;
+            }
+
+            if (t < 0) {
+                t = 0;
+            }
+            else if (t > maxTop) {
+                t = maxTop;
+            }
+
+            panelAll.style.left = l + "px";
+            panelAll.style.top = t + "px";
+        }
+
+        document.onmouseup = function() {
+            document.onmousemove = null;
+            document.onmouseup = null;
+        }
+    }
+
+    
+
+    </script>
+  
+</body>
+</html>

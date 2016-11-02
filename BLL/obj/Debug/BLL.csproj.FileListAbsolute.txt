@@ -1,0 +1,6 @@
+D:\MyProject\MyProject02\BLL\bin\BLL.dll
+D:\MyProject\MyProject02\BLL\bin\BLL.pdb
+D:\MyProject\MyProject02\BLL\bin\WebBasic.dll
+D:\MyProject\MyProject02\BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\MyProject02\BLL\obj\Debug\BLL.dll
+D:\MyProject\MyProject02\BLL\obj\Debug\BLL.pdb

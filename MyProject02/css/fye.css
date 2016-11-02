@@ -1,0 +1,35 @@
+﻿.fye a {
+    text-decoration: none;
+	border: solid 1px #AAE;
+	color: #15B;
+}
+.fye a
+{
+	padding:2px 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	text-align:center;
+	line-height:23px;
+}
+.fye span {
+    padding:2px 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	text-align:center;
+	line-height:23px;
+    background: #26B;
+    color: #fff;
+	border: solid 1px #AAE;
+}
+.fye{
+    margin-top: 3px; 
+    text-align: center;
+}
+
+.imos_pagebox{font-size:16px; color:#666; line-height:30px; margin:15px auto 0px auto; text-align:center; font-family:"宋体";}
+.imos_pagebox a{ border:1px solid #ccc; padding:5px 8px 5px 8px; text-decoration:none; color:#46a4b0;font-size:16px; line-height:18px;}
+.imos_pagebox .cur,.imos_pagebox a:hover{border:1px solid #46a4b0; background:#46a4b0; padding:5px 8px 5px 8px;text-decoration:none; color:#fff;font-size:16px;line-height:18px;}
+.imos_page_size01{border:1px solid #00398A; background:#00398A; padding:5px 8px 5px 8px;text-decoration:none; color:#fff;font-size:16px;line-height:18px;}
+.imos_pagefont_ccc{ color:#ccc;font-size:12px;}
+.imos_page_text{width:24px; padding:2px 2px 0 2px;font-size:16px;line-height:18px;}
+.page_font12_7C7C7C{color:#7C7C7C; font-size:12px;line-height:18px;}

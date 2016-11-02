@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>孩子身高预测_身高计算器_怎样根据父母身高预测孩子身高_好宝宝早教网</title>
+<meta name="keywords" content="孩子身高预测,身高计算器,父母身高预测孩子身高" />
+<meta name="description" content="您的宝宝将来能长多高？父母遗传对孩子身高影响有多少？宝宝的身高是随爸爸多一些，还是受妈妈影响更大一些？科学的身高计算器能够预测一下自己孩子长大的时候有多高，一起来算一下吧！" /> 
+<link rel="stylesheet" type="text/css" href="/css/css2.css">
+<link href="/tools/shengao/Content/css.css?v=2" rel="stylesheet" type="text/css"/>
+<script src="/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+<script src="/js/layer/layer.js" type="text/javascript"></script>
+<script src="/tools/shengao/Scripts/baobaoheight.js?v=1" type="text/javascript"></script>
+</head>
+<body>
+<!--百度统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?138a328660e33c71bad7bfcceaa1e08f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--百度提交代码-->
+<script>
+    (function() {
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<!--#include file="/userControl/head_utf8.html"-->
+<div class="container" style=" margin-top:20px;">
+<div id="content" class="main">
+    <div style=" margin-left:20px; margin-bottom:20px;">
+            <div style=" float:left; margin-top:5px;">
+                <img  src="Picture/shengao_001.jpg"/>
+            </div>
+            <div class="list_miaoshu">
+                <h2>孩子身高预测</h2>
+                <p style=" font-size:18px;">
+                您的宝宝将来能长多高？父母遗传对孩子身高影响有多少？宝宝的身高是随爸爸多一些，还是受妈妈影响更大一些？科学的身高计算器能够预测一下自己孩子长大的时候有多高，一起来算一下吧！
+                </p>
+            </div>
+            <div style=" clear:both;"></div>
+        </div>
+    
+    <div class="bt_2"><img src="Picture/bt_5.jpg"/>孩子身高预测</div> 
+    
+    	<div class="toolheight_up927">
+        	<div class="height_hbb">
+            	<p><span>爸爸身高：</span><input name="father" type="text" class="inputN" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')"/>厘米（cm）</p>
+                <p><span>妈妈身高：</span><input name="mother" type="text" class="inputN" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')"/>厘米（cm）</p>
+                <p><span>宝宝性别：</span>&nbsp;
+                    <input id="rdo_male" name="sex" type="radio" value="male" /> 男 &nbsp;
+                    <input id="rdo_female" name="sex" type="radio" value="female" /> 女
+                </p>
+                <input type="hidden" id="toolsId" value="" />
+                <p class="ja"><img id="calculateBabyHeight" width="105" height="38" style="margin-left:130px;" src="Picture/ksjs.jpg"></p>
+                <p class="jg" id="babyHeight"></p>
+            </div>
+        </div>
+
+    <div class="bt_4"><img src="Picture/bt_2.jpg" />宝宝身高小提示</div> 
+    <div class="newslist">
+         <ul class="ul_artlist">
+            <li><h3><a href="http://www.up927.com/art/1152651.shtml" target="_blank" title='常见儿童身高问题解答'>常见儿童身高问题解答</a></h3></li>
+            <li><h3><a href="http://www.up927.com/art/1153941.shtml" target="_blank" title='影响孩子身高十大因素'>影响孩子身高十大因素</a></h3></li>
+            <li><h3><a href="http://www.up927.com/art/1182160.shtml" target="_blank" title='孩子个矮别着急，好宝宝网教你如何让孩子长个子'>孩子个矮别着急，好宝宝网教你如何让孩子长个子</a></h3></li>
+            <li><h3><a href="http://www.up927.com/art/1183473.shtml" target="_blank" title='孩子长个，父母必须知道的注意事项'>孩子长个，父母必须知道的注意事项</a></h3></li>
+            <li><h3><a href="http://www.up927.com/art/1180751.shtml" target="_blank" title='让宝宝长个的运动有哪些？'>让宝宝长个的运动有哪些？</a></h3></li>
+        </ul>
+        
+    </div>
+  </div>
+  
+</div>
+
+
+<!--#include file="/userControl/foot_utf8.html"-->
+<style type="text/css">
+.main{ background:#fff; border:1px solid #DCDCDC; width:1100px;}
+.main a{ color:#46a4b0;font-size:18px;}
+.main a:hover{color:#ff6699; text-decoration:underline;}
+.ul_artlist h3{ font-size:16px;font-family:微软雅黑; font-weight:100;}
+.ul_artlist li{ line-height:25px;}
+.ul_artlist a{color:#46a4b0;font-size:18px;}
+.ul_artlist a:hover{color:#ff6699; text-decoration:underline;}
+</style>
+</body>
+</html>

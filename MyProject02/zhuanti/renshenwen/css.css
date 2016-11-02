@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ background:#f5f3dc; margin:0; padding:0;}
+a{ text-decoration:none;}
+li{ list-style:none;}
+
+.main{ margin:0 auto; width:1000px;}
+.banner{ width:1000px;position:relative;}
+.banner_title{ position:absolute; top:50px;right:50px; color:#56612c; font-size:40px; font-family:"楷体"; font-weight:bold; text-shadow: 0px 0px 10px #fff, 0px 0px 20px #fff, 0px 0px 40px #9dd;}
+.navtitle{ width:1000px; height:65px; color:#fff; text-align:center; overflow:hidden;background:linear-gradient(to right, #56612c 50% , #f5f3dc);}
+.titlesmall{ display:block; float:left; font-size:25px; font-family:"微软雅黑"; margin-top:20px; margin-left:250px;}
+.titlebig{display:block; float:left; font-size:40px; font-family:KaiTi_GB2312,sans-serif; margin-top:10px;}
+.what{ margin-top:10px; overflow:hidden;}
+.title{ margin-left:10px;color:#56612c; font-family:"黑体"; font-size:25px; font-weight:bold;}
+.title_1{ color:#777e39; float:left; margin-top:11px; font-family:"粗体"; font-weight:bold;}
+.title_point{ width:20px; height:20px; background:#ccc85e; float:left; margin:10px 3px 0 10px;}
+.content{ margin-left:10px; margin-right:10px; margin-top:-10px;}
+.content p{ color:#716647; font-family:"微软雅黑"; font-size:20px;}
+.content a{ color:#330;}
+.content a:hover{ color:#600; text-decoration:underline;}
+.content li{ float:left; margin-left:25px;border:1px solid #ccc; padding:3px;}
+.content li img{ width:250px; }
+.divider { width:1000px; height:10px; margin-top:10px;background: linear-gradient(#990, #f5f3dc);border-radius:3px 3px 0 0;}
+
+.div_cont{ width:300px; float:left; margin:10px; border:0px solid #ccc;position: relative;perspective:100px;-webkit-perspective:100px; cursor:pointer;}
+.div_cont figure{ overflow:hidden; position:relative; margin:0;}
+.div_cont figure img{ max-width:100%;  display:block;transition:all 0.2s linear 0s;}
+.mask{ position:absolute; height:55%; background:#87b81e; padding:5px;transform: translateY(75%); transition:all 0.3s linear 0s;
+left: 0;
+bottom:0; }
+.mask h2{ font-size:16px; color:#fff; font-family:Georgia, "Times New Roman", Times, serif;
+ border-bottom:1px solid #fff; padding-bottom:2px;  margin-top:3px;}
+.mask p{ font-family:"微软雅黑"; margin-top:-10px; height:60%; overflow:hidden;}
+.mask a{ display:block; width:70px; height:30px; text-decoration:none; margin-top:-30px; background:#56612c; line-height:30px; text-align:center; color:#fff; border-radius:5px; font-size:13px; float:right;}
+.mask a:hover{ background:#657f2d;}
+.div_cont figure:hover .mask{ transform:translateY(0px); opacity:0.9; transition:all 0.2s linear 0s;}
+.div_cont figure:hover img{ transform:translateY(-10%); opacity:1; transition:all 0.3s linear 0s;}
+
+.img_art{}

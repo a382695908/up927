@@ -1,0 +1,7 @@
+D:\MyProject\MyProject02\MyProject02\bin\MyProject02.dll
+D:\MyProject\MyProject02\MyProject02\bin\MyProject02.pdb
+D:\MyProject\MyProject02\MyProject02\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\MyProject02\MyProject02\obj\Debug\MyProject02.dll
+D:\MyProject\MyProject02\MyProject02\obj\Debug\MyProject02.pdb
+D:\MyProject\MyProject02\MyProject02\bin\BLL.dll
+D:\MyProject\MyProject02\MyProject02\bin\BLL.pdb

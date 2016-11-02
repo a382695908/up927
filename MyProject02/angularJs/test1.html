@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+<meta charset="UTF-8">
+<title>angularJs_test1</title>
+<!-- <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet"type="text/css" /> -->
+</head>
+<body>
+<hello></hello>
+
+<br /><br />
+
+<div mike></div>
+
+<br /><br />
+
+<div kk>
+<div>原来的内容</div>
+</div>
+
+<br /><br />
+
+<div ng-controller='ctrl1'>
+    <load>鼠标滑过1</load>
+    <load>鼠标滑过1</load>
+</div>
+<br />
+<div ng-controller='ctrl2'>
+    <load howtoLoad="showMessage2()">鼠标滑过2</load>
+</div>
+
+<br /><br />
+
+<div>
+    <div style="width:50px; height:50px; background:#ccc; line-height:50px;">
+        <superman streng>力量</superman>
+    </div>
+    <div style="width:100px; height:50px; background:#ccc; margin-top:5px;line-height:50px;">
+        <superman streng speed>力量 敏捷</superman>
+    </div>
+    <div style="width:150px; height:50px; background:#ccc; margin-top:5px;line-height:50px;">
+        <superman streng speed light>力量 敏捷 发光</superman>
+    </div>
+</div>
+<br /><br />
+
+<div ng-controller='scopeCtrl'>
+    <input type="text"  ng-model='myName'></input>
+    {{myName}}
+</div>
+
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script src="js/test1.js"></script>
+</body>
+</html>

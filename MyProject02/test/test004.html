@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Js Html</title>
+<script src="http://www.up927.com/js/jquery-1.8.0.min.js"></script>
+<script>
+//    function init() {
+//        //alert("a");
+//        var num = 0;
+//        var pAry = document.getElementsByTagName("p");
+//        for (var i = 0; i < pAry.length; i++) {
+//            num = i+1;
+//            pAry[i].onclick = function() {
+//                alert(num);
+//            }
+//        }
+    //    }
+    //alert((56+20)*3+56);
+</script>
+</head>
+<body>
+
+<div>
+<p>产品 0</p>
+<p>产品 1</p>
+<p>产品 2</p>
+<p>产品 3</p>
+<p>产品 4</p>
+</div>
+
+<style>
+.fuwuitems{   overflow:hidden; padding:0;}
+.fuwuitems li{  margin-right:20px; float:left; list-style:none; margin-left:0px;}
+</style>
+
+<div style=" width:284px;border:1px solid #000;">
+<ul class="fuwuitems">
+    <li>1111111</li>
+    <li>2222222</li>
+    <li>3333333</li>
+    <li>4444444</li>
+    
+    <li>1111111</li>
+    <li>2222222</li>
+    <li>3333333</li>
+    <li>4444444</li>
+    
+    <li>1111111</li>
+    <li>2222222</li>
+    <li>3333333</li>
+    <li>4444444</li>
+</ul>
+</div>
+
+<script>
+//    $(document).ready(function() {
+//        $('li').each(function(index) {
+//            if ((index+1) % 4 == 0) {
+//                $(this).css("margin-right", "0px");
+//            }
+//        });
+//    });
+
+    
+    $('.fuwuitems li').each(function(index) {
+        if ((index + 1) % 4 == 0) {
+            $(this).css("margin-right", "0px");
+        }
+    });
+
+    var colorArray = ["#edb01c", "#06c1a7", "#2196f3", "#e53935", "#00c0a5", "#b2007a", "#ff616d", "#13c9f4", "#e23a66"];
+    var pre = -1;
+    $('.fuwuitems li').each(function() {
+        // max - 期望的最大值
+        var max = colorArray.length - 1;
+        var i = parseInt(Math.random() * max)
+        while (i == pre) {
+            i = parseInt(Math.random() * max)
+        }
+        $(this).css("background", colorArray[i]);
+        pre = i;
+        //colorArray.splice(i, 1);
+    });
+    
+    
+</script>
+
+</body>
+</html>

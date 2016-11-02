@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+<meta charset="UTF-8">
+<title>angularJs_test3</title>
+<!-- <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet"type="text/css" /> -->
+</head>
+<body>
+
+<div ng-controller='myCtrl'>
+    {{user.name}}
+    <input type="text" ng-model='user.name'></input>
+    <button mySearch>查询</button>
+    {{list}}
+
+</div> 
+<script src="js/angular-1.5.8/angular.min.js"></script>
+<script src="js/test3.js"></script>
+</body>
+</html>

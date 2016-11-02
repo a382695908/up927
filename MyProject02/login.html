@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<script src="/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+<script src="/js/angular-1.5.8/angular.min.js"></script>
+<script src="/js/login.js" type="text/javascript"></script>
+</head>
+<body ng-App='loginApp' ng-controller='loginCtrl'>
+<form name='loginForm' ng-submit='User.login()' novalidate>
+	<div class="login_content" >
+	<!--<a id='a_closeLogin' href="javascript:void(0)" onclick='parent.popl.hideFloat()'>关闭</a>-->
+		<div class="login_box">
+			<input type="text" name='username' class="login_text" placeholder="用户名/邮箱" 
+			ng-model='User.login_data.username' required/>
+			<input type="password" name='pwd' class="login_text" placeholder="密码" 
+			ng-model='User.login_data.pwd' required/>
+			<div ng-if='loginForm.username.$touched && loginForm.pwd.$touched'>
+				<div class="error" ng-if='loginForm.username.$error.required || loginForm.pwd.$error.required'>
+				<span class="ico_error"></span>
+					请输入用户名和密码
+				</div>
+				<div class="error" ng-if='User.validLogin==2'>
+				<span class="ico_error"></span>
+					用户名或密码错误
+				</div>
+				<div class="error" ng-if='User.validLogin==3'>
+				<span class="ico_error"></span>
+					该用户已被锁定
+				</div>
+				<div class="error" ng-if='User.validLogin==4'>
+				<span class="ico_error"></span>
+					用户不存在
+				</div>
+			</div>
+			<button class="loginBtn" name="loginBtn" type="submit" ng-disabled='loginForm.$invalid'>登 录</button>
+		</div>
+	</div>
+</form>
+</body>
+</html>

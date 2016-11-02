@@ -1,0 +1,15 @@
+﻿
+/*样式清除*/
+body,div,ul,li,dl,dt,input,h1,h2,h3,h4,h5,h6,section,p,article,aside,details,footer,img{ margin:0; padding: 0;}
+section,article,aside,details{ display: block; }
+li{ list-style: none;}
+i,em,b{ font-style:normal;}
+a{ text-decoration: none; cursor: pointer;}
+img,button{ border: none;}
+
+/*浮动、清除浮动*/
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{zoom: 1;}
+.of{overflow: hidden;}
+.fl{float: left;}
+.fr{float: right;}

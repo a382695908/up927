@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link href="/css/font.css" rel="stylesheet" type="text/css" />
+<script src="/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+<script src="/js/layer/layer.js" type="text/javascript"></script>
+<link href="/css/manage/login.css" rel="stylesheet" type="text/css" />
+<!--<script src="/js/jquerym.js" type="text/javascript"></script>-->
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<script>
+    function getId(id) {
+        return document.getElementById(id);
+    }
+    
+    //更换验证码功能
+    function getVerCode(img_id) {
+        var verify = document.getElementById(img_id);
+        verify.setAttribute('src', '/rndcode.ashx?' + Math.random());
+    }
+
+    function Valid() {
+        var isOk = true;
+        var username = document.getElementById("txtLoginName").value.replace(/(^\s*)|(\s*$)/g, "");
+        var pwd = document.getElementById("txtPassword").value.replace(/(^\s*)|(\s*$)/g, "");
+        var checkCode = document.getElementById("txt_checkCode").value.replace(/(^\s*)|(\s*$)/g, "");
+
+        if (username == "" || username == "登录名") {
+            //alert("请输入登录名");
+            layer.alert('请输入登录名');
+            isOk = false;
+        }
+        else if (pwd == "" || pwd == "++++++") {
+            //alert("请输入密码");
+            layer.alert('请输入密码');
+            isOk = false;
+        }
+        else if (checkCode == "" || checkCode == "验证码") {
+            //alert("请输入验证码");
+            layer.alert('请输入验证码');
+            isOk = false;
+        }
+        return isOk;
+    }
+
+    
+    
+</script>
+<body style="background: url(/images/banner_login.jpg)repeat;">
+<!--<form>-->
+<div class="login" ng-app="myApp" ng-controller="loginCtrl">
+
+	<h2>&nbsp;</h2>
+	<div class="login-top">
+		<h1>好宝宝后台管理</h1>
+	
+			<input id="txtLoginName"  type="text" value="" placeholder="登录名" ng-model="name" />
+			<input id="txtPassword"  type="password" value="" placeholder="密码" ng-model="pwd"/>
+            <input id="txt_checkCode"  type="text" name="vercode" class="pass-text-input" value="" placeholder="验证码" autocomplete="off" ng-model="checkCode"/> 
+	
+	    <div class="forgot">
+	    	<span class="code_img"><img src="/rndcode.ashx" id="Img1" alt="验证码" align="absmiddle" border="0"/></span> 
+            <a href="javascript:getVerCode('Img1')">换一张</a>
+	    	<!--<button ng-click="loginM()">登录</button>-->
+            <input id="Button1" type="button" value="登录" ng-click="loginM()"/>
+	    	<!--<div ng-click="loginM()" style=" cursor:pointer;">登录</div>-->
+	    </div>
+
+	</div>
+	<div class="login-bottom">
+		<h3>New User &nbsp;<a href="#">Register</a>&nbsp Here</h3>
+	</div>
+</div>	
+<div class="copyright">
+	<p><a target="_blank" href="http://www.up927.com/">好宝宝儿童早教网</a></p>
+</div>
+
+<script>
+    var app = angular.module("myApp", []);
+    app.controller("loginCtrl", function($scope, $http) {
+        $scope.name = "";
+        $scope.pwd = "";
+        $scope.checkCode = "";
+        $scope.myData = { g: "1", checkcode: "asdfsadf" };
+
+        $scope.loginM = function() {
+            if (Valid()) {
+                //alert($scope.pwd);
+                $http({
+                    url: '/xzdd927/ajax/ajax_m.aspx?g=1&checkcode=' + $scope.checkCode + "&name=" + $scope.name + "&pwd=" + $scope.pwd,
+                    method: 'POST',
+                    data: { g: '1', checkcode: '1', name: '2', pwd: '3' },
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
+                }).success(function(response) {
+                    if (response.result == "success") {
+                        //layer.alert("登录成功");
+                        window.location.href = "/xzdd927/index.aspx";
+                    }
+                    else {
+                        layer.alert(response.message);
+                    }
+                }).error(function() {
+                    alert(22);
+                });
+
+
+                //                $http.post('/xzdd927/ajax/ajax_m.aspx', { g: '1','g':'1' }).success(function(response) {
+                //                    alert(33);
+                //                });
+
+            }
+        }
+    });
+
+
+    
+</script>
+<!--</form>-->
+</body>
+</html>

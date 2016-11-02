@@ -1,0 +1,13 @@
+User-Agent: *
+Disallow: /manage/
+Disallow: /xzdd927/
+Disallow: /css/
+Disallow: /js/
+Disallow: /template/
+Disallow: /ajax/
+Disallow: /images/
+Disallow: /wap/article/
+Disallow: /wap/html5/
+Disallow: /wap/images/
+Disallow: /wap/js/
+

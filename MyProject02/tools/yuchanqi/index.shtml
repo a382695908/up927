@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>预产期计算,预产期计算器,预产期计算方法,如何计算预产期,怎样计算预产期_好宝宝早教网</title>
+<meta name="keywords" content="预产期计算,预产期计算器,预产期计算方法,如何计算预产期,怎样计算预产期" />
+<meta name="description" content="好宝宝早教网为您提供：预产期计算,预产期计算器,预产期计算方法,如何计算预产期,怎样计算预产期" />
+<link href="/css/css2.css" rel="stylesheet" type="text/css"/>
+<script src="/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+<script src="/js/layer/layer.js" type="text/javascript"></script>
+<script src="/tools/yuchanqi/Scripts/ycq.js" type="text/javascript"></script>
+</head>
+<body onload="healthtime()">
+<form id="health" name="health" onSubmit="return Datejudgment()" method="get">
+<!--百度统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?138a328660e33c71bad7bfcceaa1e08f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--百度提交代码-->
+<script>
+    (function() {
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<!--#include file="/userControl/head_utf8.html"-->
+<div style="clear:both;"></div>
+<div class="" style="width:960px; margin:0 auto; margin-top:20px; background:#fff;font-family:'微软雅黑';">
+<div class="about_left f16_666" style=" margin-top:10px;">
+<ul>
+<li style="background-position:190px center;" class="about_navbg01">预产期计算器</li>
+<li style="background-position:190px center;"><a href="http://www.up927.com/tools/yuejing/">月经周期计算器</a></li>
+<li style="background-position:190px center;"><a href="http://www.up927.com/tools/yuejing/">排卵期计算器</a></li>
+</ul>
+</div>
+<div style="float:left; padding-left:30px;">
+<div style="padding:10px 0; font-size:21px; color:#ff6347;"><h1 style="font-size:23px; font-weight:lighter;">预产期计算器</h1></div>
+<div class="about_right" style=" font-size:18px;">
+<div style="  background:#fff; padding-bottom:10px;float:left; margin-top:10px; float:left;">
+末次月经时间<input name="yuchana" id="txt_year" maxlength="4" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')"/>年
+<input name="yuchanb" id="txt_month"  maxlength="2" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')"/>月
+<input name="yuchanc" id="txt_day"  maxlength="2" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')"/>日
+月经周期 <input name="mweek" id="txt_mweek" maxlength="2" value="28" maxlength="2" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')"/>天
+</div>
+<a class="f20_fff" style="text-align: center; cursor:pointer; line-height:30px; height:30px; width:100px; margin-top:10px; margin-left:10px;  color:#fff;" onclick="Datejudgment()">
+查一下~
+</a>
+<div style="clear:both;"></div>
+<div class="jieguo">
+准妈妈，您的预产期是 
+<input id="txt_ycq_year" name="yuchana"  readonly/> 年
+<input id="txt_ycq_month" name="yuchanb"  readOnly /> 月
+<input id="txt_ycq_day" name="yuchanc"  readonly/> 日 <br/><br/>
+现在是第 <input name="yuchan2" id="inputd" readonly  /> 周
+第 <input name="ji" id="tian" readonly /> 天，距离宝宝出生还有 <input name="countDown" id="countDown" readonly  /> 天
+</div>
+</div>
+<div style="clear:both;"></div>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<style>
+    .about_right input{ height:20px; width:50px; margin-left:3px; margin-right:3px; text-align:center; font-size:18px; color:#ff6699;}
+    .about_right a{ text-decoration:none; display:block; float:left;background:#EE6A50;}
+    .about_right a:hover{ background:#FF3E96;}
+    
+    .jieguo{ margin-left:0px; margin-top:20px; text-align:left; border:1px solid #FF0000; padding:10px; border-radius:5px;}
+    .jieguo input{ height:20px; width:50px; margin-left:3px; margin-right:3px; text-align:center;}
+</style>
+<div style="clear:both;"></div>
+<!--#include file="/userControl/foot_utf8.html"-->
+</form>
+</body>
+
+</html>

@@ -1,0 +1,2133 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE2A6B9C-CAD7-4173-8D0F-35413DE02BBE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyProject02</RootNamespace>
+    <AssemblyName>MyProject02</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BLL\bin\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.2774.19990, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="WebBasic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\App_Licenses.dll" />
+    <Content Include="bin\FreeTextBox.dll" />
+    <Content Include="bin\URLRewriter.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\db.mdb">
+    </Content>
+    <Content Include="favicon.ico" />
+    <Compile Include="ajax\ajax_m.aspx.cs">
+      <DependentUpon>ajax_m.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\ajax_m.aspx.designer.cs">
+      <DependentUpon>ajax_m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\AdminMethod.cs" />
+    <Compile Include="App_Code\CommonMethod.cs" />
+    <Compile Include="App_Code\Http.cs" />
+    <Compile Include="App_Code\SEO.cs" />
+    <Compile Include="App_Code\UrlRewriter.cs" />
+    <Compile Include="App_Code\UserMethod.cs" />
+    <Compile Include="index927_2.aspx.cs">
+      <DependentUpon>index927_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index927_2.aspx.designer.cs">
+      <DependentUpon>index927_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list.aspx.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list.aspx.designer.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tagList.aspx.cs">
+      <DependentUpon>tagList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tagList.aspx.designer.cs">
+      <DependentUpon>tagList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="template\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="template\Side_2.aspx.cs">
+      <DependentUpon>Side_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\Side_2.aspx.designer.cs">
+      <DependentUpon>Side_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\Delegate01.aspx.cs">
+      <DependentUpon>Delegate01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\Delegate01.aspx.designer.cs">
+      <DependentUpon>Delegate01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\extjs\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\extjs\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\test01.aspx.cs">
+      <DependentUpon>test01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\test01.aspx.designer.cs">
+      <DependentUpon>test01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\test02.aspx.cs">
+      <DependentUpon>test02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\test02.aspx.designer.cs">
+      <DependentUpon>test02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tools\baidu.aspx.cs">
+      <DependentUpon>baidu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tools\baidu.aspx.designer.cs">
+      <DependentUpon>baidu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tools\barcode.aspx.cs">
+      <DependentUpon>barcode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tools\barcode.aspx.designer.cs">
+      <DependentUpon>barcode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ttt\test001.aspx.cs">
+      <DependentUpon>test001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ttt\test001.aspx.designer.cs">
+      <DependentUpon>test001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ttt\upload\UploadFile.aspx.cs">
+      <DependentUpon>UploadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="umeditor\net\Uploader.cs" />
+    <Compile Include="userControl\pagercontrol.ascx.cs">
+      <DependentUpon>pagercontrol.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\pagercontrol.ascx.designer.cs">
+      <DependentUpon>pagercontrol.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="wap\index927.aspx.cs">
+      <DependentUpon>index927.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wap\index927.aspx.designer.cs">
+      <DependentUpon>index927.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wap\list.aspx.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wap\list.aspx.designer.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\admin\admin_list.aspx.cs">
+      <DependentUpon>admin_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\admin\admin_list.aspx.designer.cs">
+      <DependentUpon>admin_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\admin\update_admin.aspx.cs">
+      <DependentUpon>update_admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\admin\update_admin.aspx.designer.cs">
+      <DependentUpon>update_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\ajax\ajax_m.aspx.cs">
+      <DependentUpon>ajax_m.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\ajax\ajax_m.aspx.designer.cs">
+      <DependentUpon>ajax_m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\article\add_article.aspx.cs">
+      <DependentUpon>add_article.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\article\add_article.aspx.designer.cs">
+      <DependentUpon>add_article.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\article\article_list.aspx.cs">
+      <DependentUpon>article_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\article\article_list.aspx.designer.cs">
+      <DependentUpon>article_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\article\article_tag.aspx.cs">
+      <DependentUpon>article_tag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\article\article_tag.aspx.designer.cs">
+      <DependentUpon>article_tag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\article\article_tag_info.aspx.cs">
+      <DependentUpon>article_tag_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\article\article_tag_info.aspx.designer.cs">
+      <DependentUpon>article_tag_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\article\article_type.aspx.cs">
+      <DependentUpon>article_type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\article\article_type.aspx.designer.cs">
+      <DependentUpon>article_type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\article\image_list.aspx.cs">
+      <DependentUpon>image_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\article\image_list.aspx.designer.cs">
+      <DependentUpon>image_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\article\saveImage.aspx.cs">
+      <DependentUpon>saveImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\article\saveImage.aspx.designer.cs">
+      <DependentUpon>saveImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\article\saveXiuxiu.aspx.cs">
+      <DependentUpon>saveXiuxiu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\article\saveXiuxiu.aspx.designer.cs">
+      <DependentUpon>saveXiuxiu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\article\UpdateHtml.aspx.cs">
+      <DependentUpon>UpdateHtml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\article\UpdateHtml.aspx.designer.cs">
+      <DependentUpon>UpdateHtml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\friendlink\list.aspx.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\friendlink\list.aspx.designer.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\friendlink\order.aspx.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\friendlink\order.aspx.designer.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\index_left.aspx.cs">
+      <DependentUpon>index_left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\index_left.aspx.designer.cs">
+      <DependentUpon>index_left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\index_top.aspx.cs">
+      <DependentUpon>index_top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\index_top.aspx.designer.cs">
+      <DependentUpon>index_top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xzdd927\system\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xzdd927\system\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\FreeTextBox.dll.refresh" />
+    <Content Include="beifen.txt" />
+    <Content Include="css\css2.css" />
+    <Content Include="css\jquery.slideBox.css" />
+    <Content Include="css\1\base.css" />
+    <Content Include="css\1\index.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\manage\login.css" />
+    <Content Include="index927_2.aspx" />
+    <Content Include="js\angular-1.5.8\angular-animate.js" />
+    <Content Include="js\angular-1.5.8\angular-animate.min.js" />
+    <Content Include="js\angular-1.5.8\angular-aria.js" />
+    <Content Include="js\angular-1.5.8\angular-aria.min.js" />
+    <Content Include="js\angular-1.5.8\angular-cookies.js" />
+    <Content Include="js\angular-1.5.8\angular-cookies.min.js" />
+    <Content Include="js\angular-1.5.8\angular-csp.css" />
+    <Content Include="js\angular-1.5.8\angular-loader.js" />
+    <Content Include="js\angular-1.5.8\angular-loader.min.js" />
+    <Content Include="js\angular-1.5.8\angular-message-format.js" />
+    <Content Include="js\angular-1.5.8\angular-message-format.min.js" />
+    <Content Include="js\angular-1.5.8\angular-messages.js" />
+    <Content Include="js\angular-1.5.8\angular-messages.min.js" />
+    <Content Include="js\angular-1.5.8\angular-mocks.js" />
+    <Content Include="js\angular-1.5.8\angular-parse-ext.js" />
+    <Content Include="js\angular-1.5.8\angular-parse-ext.min.js" />
+    <Content Include="js\angular-1.5.8\angular-resource.js" />
+    <Content Include="js\angular-1.5.8\angular-resource.min.js" />
+    <Content Include="js\angular-1.5.8\angular-route.js" />
+    <Content Include="js\angular-1.5.8\angular-route.min.js" />
+    <Content Include="js\angular-1.5.8\angular-sanitize.js" />
+    <Content Include="js\angular-1.5.8\angular-sanitize.min.js" />
+    <Content Include="js\angular-1.5.8\angular-scenario.js" />
+    <Content Include="js\angular-1.5.8\angular-touch.js" />
+    <Content Include="js\angular-1.5.8\angular-touch.min.js" />
+    <Content Include="js\angular-1.5.8\angular.js" />
+    <Content Include="js\angular-1.5.8\angular.min.js" />
+    <Content Include="js\angular-1.5.8\version.txt" />
+    <Content Include="js\bootstrap\bootstrap-responsive.css" />
+    <Content Include="js\bootstrap\bootstrap-responsive.min.css" />
+    <Content Include="js\bootstrap\bootstrap.min.css" />
+    <Content Include="js\bootstrap\bootstrap.min.js" />
+    <Content Include="js\CommonMethod.js" />
+    <Content Include="js\head.js" />
+    <Content Include="js\head_top.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery-1.8.0.min.js" />
+    <Content Include="js\layer\extend\layer.ext.js" />
+    <Content Include="js\layer\layer.js" />
+    <Content Include="js\layer\skin\default\icon-ext.png" />
+    <Content Include="js\layer\skin\default\icon.png" />
+    <Content Include="js\layer\skin\default\loading-0.gif" />
+    <Content Include="js\layer\skin\default\loading-1.gif" />
+    <Content Include="js\layer\skin\default\loading-2.gif" />
+    <Content Include="js\layer\skin\layer.css" />
+    <Content Include="js\layer\skin\layer.ext.css" />
+    <Content Include="js\login.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\nav.js" />
+    <Content Include="js\register.js" />
+    <Content Include="js\register1.js" />
+    <Content Include="js\swfobject.js" />
+    <Content Include="js\swf\mFileUpload.swf" />
+    <Content Include="js\swf\up927_zhuamao.swf" />
+    <Content Include="js\tools\jsq_debx.js" />
+    <None Include="js\angular-1.5.8\angular-animate.min.js.map" />
+    <None Include="js\angular-1.5.8\angular-aria.min.js.map" />
+    <None Include="js\angular-1.5.8\angular-cookies.min.js.map" />
+    <None Include="js\angular-1.5.8\angular-loader.min.js.map" />
+    <None Include="js\angular-1.5.8\angular-message-format.min.js.map" />
+    <None Include="js\angular-1.5.8\angular-messages.min.js.map" />
+    <None Include="js\angular-1.5.8\angular-parse-ext.min.js.map" />
+    <None Include="js\angular-1.5.8\angular-resource.min.js.map" />
+    <None Include="js\angular-1.5.8\angular-route.min.js.map" />
+    <None Include="js\angular-1.5.8\angular-sanitize.min.js.map" />
+    <None Include="js\angular-1.5.8\angular-touch.min.js.map" />
+    <None Include="js\angular-1.5.8\angular.min.js.map" />
+    <None Include="js\angular-1.5.8\errors.json" />
+    <None Include="js\angular-1.5.8\version.json" />
+    <None Include="test\js\extjs\resources\images\access\form\clear-trigger.psd" />
+    <None Include="test\js\extjs\resources\images\access\form\date-trigger.psd" />
+    <None Include="test\js\extjs\resources\images\access\form\search-trigger.psd" />
+    <None Include="test\js\extjs\resources\images\access\form\trigger.psd" />
+    <None Include="test\js\extjs\resources\images\default\form\clear-trigger.psd" />
+    <None Include="test\js\extjs\resources\images\default\form\date-trigger.psd" />
+    <None Include="test\js\extjs\resources\images\default\form\search-trigger.psd" />
+    <None Include="test\js\extjs\resources\images\default\form\trigger-square.psd" />
+    <None Include="test\js\extjs\resources\images\default\form\trigger.psd" />
+    <None Include="test\js\extjs\resources\images\default\window\left-corners.psd" />
+    <None Include="test\js\extjs\resources\images\default\window\left-right.psd" />
+    <None Include="test\js\extjs\resources\images\default\window\right-corners.psd" />
+    <None Include="test\js\extjs\resources\images\default\window\top-bottom.psd" />
+    <None Include="test\js\extjs\resources\images\gray\window\left-corners.pspimage" />
+    <None Include="test\js\extjs\resources\images\yourtheme\form\clear-trigger.psd" />
+    <None Include="test\js\extjs\resources\images\yourtheme\form\date-trigger.psd" />
+    <None Include="test\js\extjs\resources\images\yourtheme\form\search-trigger.psd" />
+    <None Include="test\js\extjs\resources\images\yourtheme\form\trigger-square.psd" />
+    <None Include="test\js\extjs\resources\images\yourtheme\form\trigger.psd" />
+    <None Include="test\js\extjs\resources\images\yourtheme\window\left-corners.psd" />
+    <None Include="test\js\extjs\resources\images\yourtheme\window\left-right.psd" />
+    <None Include="test\js\extjs\resources\images\yourtheme\window\right-corners.psd" />
+    <None Include="test\js\extjs\resources\images\yourtheme\window\top-bottom.psd" />
+    <None Include="test\js\extjs\resources\resources.jsb" />
+    <None Include="tools\gonghang.shtml" />
+    <None Include="tools\jianhang.shtml" />
+    <None Include="tools\nonghang.shtml" />
+    <None Include="tools\rmb.shtml" />
+    <None Include="tools\jsq1.shtml" />
+    <None Include="tools\jsq2.shtml" />
+    <Content Include="js\tools\shengxiao.js" />
+    <Content Include="js\tools\xingzuo.js" />
+    <None Include="tools\xingzuo.shtml" />
+    <None Include="tools\zhonghang.shtml" />
+    <Content Include="404.html" />
+    <Content Include="ajax\ajax_m.aspx" />
+    <Content Include="css\bianji_ht.css\bianji_ht.css" />
+    <Content Include="css\bianji_ht.css\bianji_top.css" />
+    <Content Include="css\bianji_ht.css\jquery.treeview.css" />
+    <Content Include="css\bianji_ht.css\screen.css" />
+    <Content Include="css\bianji_ht.css\shenfen.css" />
+    <Content Include="css\bianji_ht.css\备份\bianji_ht.css" />
+    <Content Include="css\bianji_ht.css\备份\bianji_top.css" />
+    <Content Include="css\bianji_ht.css\备份\shenfen.css" />
+    <Content Include="css\fye.css" />
+    <Content Include="css\manage\font.css" />
+    <Content Include="js\calendar\WebCalendar.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.treeview.js" />
+    <Content Include="js\jquerym.js" />
+    <Content Include="js\koala.min.1.5.js" />
+    <Content Include="js\terminator2.2.min.js" />
+    <Content Include="js\Util.js" />
+    <Content Include="js\commomValid.js" />
+    <Content Include="js\winpop.js" />
+    <Content Include="js\winpop.min.js" />
+    <Content Include="js\xiuxiu\avatar.swf" />
+    <Content Include="js\xiuxiu\CollagePlugin.swf" />
+    <Content Include="js\xiuxiu\expressInstall.swf" />
+    <Content Include="js\xiuxiu\FacePhoto.swf" />
+    <Content Include="js\xiuxiu\Main.swf" />
+    <Content Include="js\xiuxiu\PhotoEditor.swf" />
+    <Content Include="js\xiuxiu\plugin.swf" />
+    <Content Include="js\xiuxiu\tanchu.js" />
+    <Content Include="js\xiuxiu\xiuxiu.js" />
+    <Content Include="js\xiuxiu\xiuxiuUpload.html" />
+    <Content Include="list.aspx" />
+    <Content Include="css\css.css" />
+    <Content Include="images\bg.gif" />
+    <Content Include="images\digg.gif" />
+    <Content Include="images\ico_2.gif" />
+    <Content Include="images\title.jpg" />
+    <Content Include="login.html" />
+    <Content Include="register.html" />
+    <Content Include="robots.txt" />
+    <Content Include="tagList.aspx" />
+    <Content Include="template\404.aspx" />
+    <Content Include="template\BokeContent.html" />
+    <Content Include="template\detail_2.html" />
+    <None Include="tools\shengxiao.shtml" />
+    <None Include="umeditor\.DS_Store" />
+    <Content Include="template\Side_2.aspx" />
+    <None Include="tools\yuchanqi\index.shtml" />
+    <Content Include="test\js\JScript1.js" />
+    <Content Include="test\test004.html" />
+    <Content Include="test\test005.html" />
+    <Content Include="test\test03.html" />
+    <Content Include="tools\shengao\Content\css.css" />
+    <None Include="tools\shengao\index.shtml" />
+    <Content Include="tools\shengao\Picture\baobao_logo2.gif" />
+    <Content Include="tools\shengao\Picture\bt_1.jpg" />
+    <Content Include="tools\shengao\Picture\bt_2.jpg" />
+    <Content Include="tools\shengao\Picture\bt_4.jpg" />
+    <Content Include="tools\shengao\Picture\bt_5.jpg" />
+    <Content Include="tools\shengao\Picture\gj_10.gif" />
+    <Content Include="tools\shengao\Picture\gj_12.gif" />
+    <Content Include="tools\shengao\Picture\gj_2.gif" />
+    <Content Include="tools\shengao\Picture\gj_3.gif" />
+    <Content Include="tools\shengao\Picture\gj_4.gif" />
+    <Content Include="tools\shengao\Picture\gj_6.gif" />
+    <Content Include="tools\shengao\Picture\gj_8.gif" />
+    <Content Include="tools\shengao\Picture\gj_9.gif" />
+    <Content Include="tools\shengao\Picture\ksjs.jpg" />
+    <Content Include="tools\shengao\Picture\left.jpg" />
+    <Content Include="tools\shengao\Picture\right.jpg" />
+    <Content Include="tools\shengao\Picture\sohu_logo2.gif" />
+    <Content Include="tools\shengao\Picture\weibo_qq.png" />
+    <Content Include="tools\shengao\Picture\weibo_qqkj.png" />
+    <Content Include="tools\shengao\Picture\weibo_sina.png" />
+    <Content Include="tools\shengao\Picture\weibo_sohu.gif" />
+    <Content Include="tools\shengao\Picture\xy.gif" />
+    <Content Include="tools\shengao\Scripts\baobaoheight.js" />
+    <Content Include="tools\yuchanqi\Scripts\ycq.js" />
+    <Content Include="tools\yuejing\Content\base.css" />
+    <Content Include="tools\yuejing\Content\blue.css" />
+    <Content Include="tools\yuejing\Content\public_v2.css" />
+    <None Include="tools\yuejing\index.shtml" />
+    <Content Include="tools\yuejing\Images\bg_safe_calendar_blue.png" />
+    <Content Include="tools\yuejing\Images\box_bottom.png" />
+    <Content Include="tools\yuejing\Images\box_top.png" />
+    <Content Include="tools\yuejing\Images\buttom.png" />
+    <Content Include="tools\yuejing\Images\fixed_02.png" />
+    <Content Include="tools\yuejing\Images\input.jpg" />
+    <Content Include="tools\yuejing\Images\input_long.jpg" />
+    <Content Include="tools\yuejing\Images\input_long_light.jpg" />
+    <Content Include="tools\yuejing\Images\tri.gif" />
+    <Content Include="tools\yuejing\Scripts\newfemale.js" />
+    <Content Include="umeditor\net\getContent.ashx" />
+    <Content Include="umeditor\net\imageUp.ashx" />
+    <None Include="umeditor\net\config.json" />
+    <Content Include="umeditor\net\controller.ashx" />
+    <None Include="umeditor\third-party\.DS_Store" />
+    <None Include="umeditor\third-party\jquery-1.10.2.min.map" />
+    <None Include="umeditor\third-party\video-js\font\vjs.eot" />
+    <None Include="umeditor\third-party\video-js\font\vjs.svg" />
+    <None Include="umeditor\third-party\video-js\font\vjs.ttf" />
+    <None Include="umeditor\third-party\video-js\font\vjs.woff" />
+    <None Include="wap\art\19.shtml" />
+    <None Include="wap\art\20.shtml" />
+    <None Include="wap\art\61.shtml" />
+    <None Include="zhuanti\renshenwen\index.shtml" />
+    <Content Include="test\css\test01.css" />
+    <Content Include="test\Delegate01.aspx" />
+    <Content Include="test\extjs\WebForm1.aspx" />
+    <Content Include="test\js\extjs\adapter\ext\ext-base-debug.js" />
+    <Content Include="test\js\extjs\adapter\ext\ext-base.js" />
+    <Content Include="test\js\extjs\adapter\jquery\ext-jquery-adapter-debug.js" />
+    <Content Include="test\js\extjs\adapter\jquery\ext-jquery-adapter.js" />
+    <Content Include="test\js\extjs\adapter\prototype\ext-prototype-adapter-debug.js" />
+    <Content Include="test\js\extjs\adapter\prototype\ext-prototype-adapter.js" />
+    <Content Include="test\js\extjs\adapter\yui\ext-yui-adapter-debug.js" />
+    <Content Include="test\js\extjs\adapter\yui\ext-yui-adapter.js" />
+    <Content Include="test\js\extjs\ext-all-debug.js" />
+    <Content Include="test\js\extjs\ext-all.js" />
+    <Content Include="test\js\extjs\resources\charts.swf" />
+    <Content Include="test\js\extjs\resources\css\debug.css" />
+    <Content Include="test\js\extjs\resources\css\ext-all-notheme.css" />
+    <Content Include="test\js\extjs\resources\css\ext-all.css" />
+    <Content Include="test\js\extjs\resources\css\README.txt" />
+    <Content Include="test\js\extjs\resources\css\reset-min.css" />
+    <Content Include="test\js\extjs\resources\css\structure\borders.css" />
+    <Content Include="test\js\extjs\resources\css\structure\box.css" />
+    <Content Include="test\js\extjs\resources\css\structure\button.css" />
+    <Content Include="test\js\extjs\resources\css\structure\combo.css" />
+    <Content Include="test\js\extjs\resources\css\structure\core.css" />
+    <Content Include="test\js\extjs\resources\css\structure\date-picker.css" />
+    <Content Include="test\js\extjs\resources\css\structure\dd.css" />
+    <Content Include="test\js\extjs\resources\css\structure\debug.css" />
+    <Content Include="test\js\extjs\resources\css\structure\dialog.css" />
+    <Content Include="test\js\extjs\resources\css\structure\editor.css" />
+    <Content Include="test\js\extjs\resources\css\structure\form.css" />
+    <Content Include="test\js\extjs\resources\css\structure\grid.css" />
+    <Content Include="test\js\extjs\resources\css\structure\layout.css" />
+    <Content Include="test\js\extjs\resources\css\structure\list-view.css" />
+    <Content Include="test\js\extjs\resources\css\structure\menu.css" />
+    <Content Include="test\js\extjs\resources\css\structure\panel-reset.css" />
+    <Content Include="test\js\extjs\resources\css\structure\panel.css" />
+    <Content Include="test\js\extjs\resources\css\structure\progress.css" />
+    <Content Include="test\js\extjs\resources\css\structure\qtips.css" />
+    <Content Include="test\js\extjs\resources\css\structure\reset.css" />
+    <Content Include="test\js\extjs\resources\css\structure\resizable.css" />
+    <Content Include="test\js\extjs\resources\css\structure\slider.css" />
+    <Content Include="test\js\extjs\resources\css\structure\tabs.css" />
+    <Content Include="test\js\extjs\resources\css\structure\toolbar.css" />
+    <Content Include="test\js\extjs\resources\css\structure\tree.css" />
+    <Content Include="test\js\extjs\resources\css\structure\window.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\borders.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\box.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\button.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\combo.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\core.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\date-picker.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\dd.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\debug.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\dialog.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\editor.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\form.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\grid.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\layout.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\list-view.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\menu.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\panel.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\progress.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\qtips.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\resizable.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\slider.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\tabs.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\toolbar.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\tree.css" />
+    <Content Include="test\js\extjs\resources\css\theme-access\window.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\borders.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\box.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\button.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\combo.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\core.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\date-picker.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\dd.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\debug.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\dialog.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\editor.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\form.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\grid.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\layout.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\list-view.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\menu.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\panel.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\progress.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\qtips.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\resizable.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\slider.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\tabs.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\toolbar.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\tree.css" />
+    <Content Include="test\js\extjs\resources\css\theme-gray\window.css" />
+    <Content Include="test\js\extjs\resources\css\visual\borders.css" />
+    <Content Include="test\js\extjs\resources\css\visual\box.css" />
+    <Content Include="test\js\extjs\resources\css\visual\button.css" />
+    <Content Include="test\js\extjs\resources\css\visual\combo.css" />
+    <Content Include="test\js\extjs\resources\css\visual\core.css" />
+    <Content Include="test\js\extjs\resources\css\visual\date-picker.css" />
+    <Content Include="test\js\extjs\resources\css\visual\dd.css" />
+    <Content Include="test\js\extjs\resources\css\visual\debug.css" />
+    <Content Include="test\js\extjs\resources\css\visual\dialog.css" />
+    <Content Include="test\js\extjs\resources\css\visual\editor.css" />
+    <Content Include="test\js\extjs\resources\css\visual\form.css" />
+    <Content Include="test\js\extjs\resources\css\visual\grid.css" />
+    <Content Include="test\js\extjs\resources\css\visual\layout.css" />
+    <Content Include="test\js\extjs\resources\css\visual\list-view.css" />
+    <Content Include="test\js\extjs\resources\css\visual\menu.css" />
+    <Content Include="test\js\extjs\resources\css\visual\panel.css" />
+    <Content Include="test\js\extjs\resources\css\visual\progress.css" />
+    <Content Include="test\js\extjs\resources\css\visual\qtips.css" />
+    <Content Include="test\js\extjs\resources\css\visual\resizable.css" />
+    <Content Include="test\js\extjs\resources\css\visual\slider.css" />
+    <Content Include="test\js\extjs\resources\css\visual\tabs.css" />
+    <Content Include="test\js\extjs\resources\css\visual\toolbar.css" />
+    <Content Include="test\js\extjs\resources\css\visual\tree.css" />
+    <Content Include="test\js\extjs\resources\css\visual\window.css" />
+    <Content Include="test\js\extjs\resources\css\xtheme-access.css" />
+    <Content Include="test\js\extjs\resources\css\xtheme-blue.css" />
+    <Content Include="test\js\extjs\resources\css\xtheme-gray.css" />
+    <Content Include="test\js\extjs\resources\css\yourtheme.css" />
+    <Content Include="test\js\extjs\resources\expressinstall.swf" />
+    <Content Include="test\js\extjs\resources\images\access\box\corners-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\access\box\corners.gif" />
+    <Content Include="test\js\extjs\resources\images\access\box\l-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\access\box\l.gif" />
+    <Content Include="test\js\extjs\resources\images\access\box\r-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\access\box\r.gif" />
+    <Content Include="test\js\extjs\resources\images\access\box\tb-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\access\box\tb.gif" />
+    <Content Include="test\js\extjs\resources\images\access\button\arrow.gif" />
+    <Content Include="test\js\extjs\resources\images\access\button\btn.gif" />
+    <Content Include="test\js\extjs\resources\images\access\button\group-cs.gif" />
+    <Content Include="test\js\extjs\resources\images\access\button\group-lr.gif" />
+    <Content Include="test\js\extjs\resources\images\access\button\group-tb.gif" />
+    <Content Include="test\js\extjs\resources\images\access\button\s-arrow-b-noline.gif" />
+    <Content Include="test\js\extjs\resources\images\access\button\s-arrow-b.gif" />
+    <Content Include="test\js\extjs\resources\images\access\button\s-arrow-bo.gif" />
+    <Content Include="test\js\extjs\resources\images\access\button\s-arrow-noline.gif" />
+    <Content Include="test\js\extjs\resources\images\access\button\s-arrow-o.gif" />
+    <Content Include="test\js\extjs\resources\images\access\button\s-arrow.gif" />
+    <Content Include="test\js\extjs\resources\images\access\editor\tb-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\form\checkbox.gif" />
+    <Content Include="test\js\extjs\resources\images\access\form\clear-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\access\form\date-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\access\form\error-tip-corners.gif" />
+    <Content Include="test\js\extjs\resources\images\access\form\exclamation.gif" />
+    <Content Include="test\js\extjs\resources\images\access\form\radio.gif" />
+    <Content Include="test\js\extjs\resources\images\access\form\search-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\access\form\text-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\form\trigger-tpl.gif" />
+    <Content Include="test\js\extjs\resources\images\access\form\trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\arrow-left-white.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\arrow-right-white.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\col-move-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\col-move-top.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\columns.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\dirty.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\done.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\drop-no.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\drop-yes.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\footer-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\grid-blue-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\grid-blue-split.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\grid-hrow.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\grid-loading.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\grid-split.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\grid-vista-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\grid3-hd-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\grid3-hrow-over.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\grid3-hrow.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\grid3-special-col-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\group-by.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\group-collapse.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\group-expand-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\group-expand.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\hd-pop.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\hmenu-asc.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\hmenu-desc.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\hmenu-lock.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\hmenu-lock.png" />
+    <Content Include="test\js\extjs\resources\images\access\grid\hmenu-unlock.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\hmenu-unlock.png" />
+    <Content Include="test\js\extjs\resources\images\access\grid\invalid_line.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\loading.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\mso-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\nowait.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\page-first-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\page-first.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\page-last-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\page-last.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\page-next-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\page-next.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\page-prev-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\page-prev.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\pick-button.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\refresh.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\row-check-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\row-expand-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\row-over.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\row-sel.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\sort-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\sort_asc.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\sort_desc.gif" />
+    <Content Include="test\js\extjs\resources\images\access\grid\wait.gif" />
+    <Content Include="test\js\extjs\resources\images\access\menu\checked.gif" />
+    <Content Include="test\js\extjs\resources\images\access\menu\group-checked.gif" />
+    <Content Include="test\js\extjs\resources\images\access\menu\item-over.gif" />
+    <Content Include="test\js\extjs\resources\images\access\menu\menu-parent.gif" />
+    <Content Include="test\js\extjs\resources\images\access\menu\menu.gif" />
+    <Content Include="test\js\extjs\resources\images\access\menu\unchecked.gif" />
+    <Content Include="test\js\extjs\resources\images\access\panel\corners-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\panel\left-right.gif" />
+    <Content Include="test\js\extjs\resources\images\access\panel\light-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\access\panel\tool-sprite-tpl.gif" />
+    <Content Include="test\js\extjs\resources\images\access\panel\tool-sprites.gif" />
+    <Content Include="test\js\extjs\resources\images\access\panel\tools-sprites-trans.gif" />
+    <Content Include="test\js\extjs\resources\images\access\panel\top-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\access\panel\white-corners-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\panel\white-left-right.gif" />
+    <Content Include="test\js\extjs\resources\images\access\panel\white-top-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\access\progress\progress-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\qtip\close.gif" />
+    <Content Include="test\js\extjs\resources\images\access\qtip\tip-anchor-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\qtip\tip-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\shared\glass-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\shared\hd-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\shared\left-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\access\shared\right-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\e-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\e-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\ne-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\ne-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\nw-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\nw-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\s-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\s-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\se-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\se-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\square.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\sw-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\access\sizer\sw-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\access\slider\slider-bg.png" />
+    <Content Include="test\js\extjs\resources\images\access\slider\slider-thumb.png" />
+    <Content Include="test\js\extjs\resources\images\access\slider\slider-v-bg.png" />
+    <Content Include="test\js\extjs\resources\images\access\slider\slider-v-thumb.png" />
+    <Content Include="test\js\extjs\resources\images\access\tabs\scroll-left.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tabs\scroll-right.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tabs\tab-btm-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tabs\tab-btm-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tabs\tab-close.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tabs\tab-strip-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tabs\tabs-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\toolbar\bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\toolbar\btn-arrow-light.gif" />
+    <Content Include="test\js\extjs\resources\images\access\toolbar\btn-arrow.gif" />
+    <Content Include="test\js\extjs\resources\images\access\toolbar\btn-over-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\toolbar\gray-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\access\toolbar\more.gif" />
+    <Content Include="test\js\extjs\resources\images\access\toolbar\s-arrow-bo.gif" />
+    <Content Include="test\js\extjs\resources\images\access\toolbar\tb-btn-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\toolbar\tb-xl-btn-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\access\toolbar\tb-xl-sep.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\arrows.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\drop-add.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\drop-between.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\drop-no.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\drop-over.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\drop-under.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\drop-yes.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\elbow-end-minus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\elbow-end-minus.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\elbow-end-plus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\elbow-end-plus.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\elbow-end.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\elbow-line.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\elbow-minus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\elbow-minus.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\elbow-plus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\elbow-plus.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\elbow.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\folder-open.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\folder.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\leaf.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\loading.gif" />
+    <Content Include="test\js\extjs\resources\images\access\tree\s.gif" />
+    <Content Include="test\js\extjs\resources\images\access\window\icon-error.gif" />
+    <Content Include="test\js\extjs\resources\images\access\window\icon-info.gif" />
+    <Content Include="test\js\extjs\resources\images\access\window\icon-question.gif" />
+    <Content Include="test\js\extjs\resources\images\access\window\icon-warning.gif" />
+    <Content Include="test\js\extjs\resources\images\access\window\left-corners.png" />
+    <Content Include="test\js\extjs\resources\images\access\window\left-right.png" />
+    <Content Include="test\js\extjs\resources\images\access\window\right-corners.png" />
+    <Content Include="test\js\extjs\resources\images\access\window\top-bottom.png" />
+    <Content Include="test\js\extjs\resources\images\default\box\corners-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\default\box\corners.gif" />
+    <Content Include="test\js\extjs\resources\images\default\box\l-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\default\box\l.gif" />
+    <Content Include="test\js\extjs\resources\images\default\box\r-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\default\box\r.gif" />
+    <Content Include="test\js\extjs\resources\images\default\box\tb-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\default\box\tb.gif" />
+    <Content Include="test\js\extjs\resources\images\default\button\arrow.gif" />
+    <Content Include="test\js\extjs\resources\images\default\button\btn.gif" />
+    <Content Include="test\js\extjs\resources\images\default\button\group-cs.gif" />
+    <Content Include="test\js\extjs\resources\images\default\button\group-lr.gif" />
+    <Content Include="test\js\extjs\resources\images\default\button\group-tb.gif" />
+    <Content Include="test\js\extjs\resources\images\default\button\s-arrow-b-noline.gif" />
+    <Content Include="test\js\extjs\resources\images\default\button\s-arrow-b.gif" />
+    <Content Include="test\js\extjs\resources\images\default\button\s-arrow-bo.gif" />
+    <Content Include="test\js\extjs\resources\images\default\button\s-arrow-noline.gif" />
+    <Content Include="test\js\extjs\resources\images\default\button\s-arrow-o.gif" />
+    <Content Include="test\js\extjs\resources\images\default\button\s-arrow.gif" />
+    <Content Include="test\js\extjs\resources\images\default\dd\drop-add.gif" />
+    <Content Include="test\js\extjs\resources\images\default\dd\drop-no.gif" />
+    <Content Include="test\js\extjs\resources\images\default\dd\drop-yes.gif" />
+    <Content Include="test\js\extjs\resources\images\default\editor\tb-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\form\checkbox.gif" />
+    <Content Include="test\js\extjs\resources\images\default\form\clear-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\default\form\date-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\default\form\error-tip-corners.gif" />
+    <Content Include="test\js\extjs\resources\images\default\form\exclamation.gif" />
+    <Content Include="test\js\extjs\resources\images\default\form\radio.gif" />
+    <Content Include="test\js\extjs\resources\images\default\form\search-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\default\form\text-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\form\trigger-square.gif" />
+    <Content Include="test\js\extjs\resources\images\default\form\trigger-tpl.gif" />
+    <Content Include="test\js\extjs\resources\images\default\form\trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\default\gradient-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\arrow-left-white.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\arrow-right-white.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\col-move-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\col-move-top.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\columns.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\dirty.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\done.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\drop-no.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\drop-yes.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\footer-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\grid-blue-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\grid-blue-split.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\grid-hrow.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\grid-loading.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\grid-split.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\grid-vista-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\grid3-hd-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\grid3-hrow-over.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\grid3-hrow.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\grid3-special-col-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\group-by.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\group-collapse.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\group-expand-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\group-expand.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\hd-pop.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\hmenu-asc.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\hmenu-desc.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\hmenu-lock.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\hmenu-lock.png" />
+    <Content Include="test\js\extjs\resources\images\default\grid\hmenu-unlock.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\hmenu-unlock.png" />
+    <Content Include="test\js\extjs\resources\images\default\grid\invalid_line.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\loading.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\mso-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\nowait.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\page-first-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\page-first.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\page-last-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\page-last.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\page-next-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\page-next.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\page-prev-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\page-prev.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\pick-button.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\refresh.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\row-check-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\row-expand-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\row-over.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\row-sel.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\sort-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\sort_asc.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\sort_desc.gif" />
+    <Content Include="test\js\extjs\resources\images\default\grid\wait.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\collapse.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\expand.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\gradient-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\mini-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\mini-left.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\mini-right.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\mini-top.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\ns-collapse.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\ns-expand.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\panel-close.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\panel-title-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\panel-title-light-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\stick.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\stuck.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\tab-close-on.gif" />
+    <Content Include="test\js\extjs\resources\images\default\layout\tab-close.gif" />
+    <Content Include="test\js\extjs\resources\images\default\menu\checked.gif" />
+    <Content Include="test\js\extjs\resources\images\default\menu\group-checked.gif" />
+    <Content Include="test\js\extjs\resources\images\default\menu\item-over.gif" />
+    <Content Include="test\js\extjs\resources\images\default\menu\menu-parent.gif" />
+    <Content Include="test\js\extjs\resources\images\default\menu\menu.gif" />
+    <Content Include="test\js\extjs\resources\images\default\menu\unchecked.gif" />
+    <Content Include="test\js\extjs\resources\images\default\panel\corners-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\panel\left-right.gif" />
+    <Content Include="test\js\extjs\resources\images\default\panel\light-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\default\panel\tool-sprite-tpl.gif" />
+    <Content Include="test\js\extjs\resources\images\default\panel\tool-sprites.gif" />
+    <Content Include="test\js\extjs\resources\images\default\panel\tools-sprites-trans.gif" />
+    <Content Include="test\js\extjs\resources\images\default\panel\top-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\default\panel\top-bottom.png" />
+    <Content Include="test\js\extjs\resources\images\default\panel\white-corners-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\panel\white-left-right.gif" />
+    <Content Include="test\js\extjs\resources\images\default\panel\white-top-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\default\progress\progress-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\qtip\bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\qtip\close.gif" />
+    <Content Include="test\js\extjs\resources\images\default\qtip\tip-anchor-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\qtip\tip-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\s.gif" />
+    <Content Include="test\js\extjs\resources\images\default\shadow-c.png" />
+    <Content Include="test\js\extjs\resources\images\default\shadow-lr.png" />
+    <Content Include="test\js\extjs\resources\images\default\shadow.png" />
+    <Content Include="test\js\extjs\resources\images\default\shared\blue-loading.gif" />
+    <Content Include="test\js\extjs\resources\images\default\shared\calendar.gif" />
+    <Content Include="test\js\extjs\resources\images\default\shared\glass-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\shared\hd-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\shared\large-loading.gif" />
+    <Content Include="test\js\extjs\resources\images\default\shared\left-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\default\shared\loading-balls.gif" />
+    <Content Include="test\js\extjs\resources\images\default\shared\right-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\default\shared\warning.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\e-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\e-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\ne-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\ne-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\nw-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\nw-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\s-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\s-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\se-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\se-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\square.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\sw-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\default\sizer\sw-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\default\slider\slider-bg.png" />
+    <Content Include="test\js\extjs\resources\images\default\slider\slider-thumb.png" />
+    <Content Include="test\js\extjs\resources\images\default\slider\slider-v-bg.png" />
+    <Content Include="test\js\extjs\resources\images\default\slider\slider-v-thumb.png" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\scroll-left.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\scroll-right.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\scroller-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\tab-btm-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\tab-btm-over-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\tab-btm-over-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\tab-btm-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\tab-close.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\tab-strip-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\tab-strip-bg.png" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tabs\tabs-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\toolbar\bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\toolbar\btn-arrow-light.gif" />
+    <Content Include="test\js\extjs\resources\images\default\toolbar\btn-arrow.gif" />
+    <Content Include="test\js\extjs\resources\images\default\toolbar\btn-over-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\toolbar\gray-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\toolbar\more.gif" />
+    <Content Include="test\js\extjs\resources\images\default\toolbar\tb-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\default\toolbar\tb-btn-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\toolbar\tb-xl-btn-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\default\toolbar\tb-xl-sep.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\arrows.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\drop-add.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\drop-between.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\drop-no.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\drop-over.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\drop-under.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\drop-yes.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\elbow-end-minus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\elbow-end-minus.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\elbow-end-plus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\elbow-end-plus.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\elbow-end.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\elbow-line.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\elbow-minus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\elbow-minus.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\elbow-plus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\elbow-plus.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\elbow.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\folder-open.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\folder.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\leaf.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\loading.gif" />
+    <Content Include="test\js\extjs\resources\images\default\tree\s.gif" />
+    <Content Include="test\js\extjs\resources\images\default\window\icon-error.gif" />
+    <Content Include="test\js\extjs\resources\images\default\window\icon-info.gif" />
+    <Content Include="test\js\extjs\resources\images\default\window\icon-question.gif" />
+    <Content Include="test\js\extjs\resources\images\default\window\icon-warning.gif" />
+    <Content Include="test\js\extjs\resources\images\default\window\left-corners.png" />
+    <Content Include="test\js\extjs\resources\images\default\window\left-right.png" />
+    <Content Include="test\js\extjs\resources\images\default\window\right-corners.png" />
+    <Content Include="test\js\extjs\resources\images\default\window\top-bottom.png" />
+    <Content Include="test\js\extjs\resources\images\gray\button\btn-arrow.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\button\btn-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\button\btn.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\button\group-cs.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\button\group-lr.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\button\group-tb.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\button\s-arrow-bo.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\button\s-arrow-o.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\form\clear-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\form\date-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\form\search-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\form\trigger-square.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\form\trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\gradient-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\col-move-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\col-move-top.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\grid3-hd-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\grid3-hrow-over.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\grid3-hrow-over2.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\grid3-hrow.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\grid3-hrow2.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\grid3-special-col-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\grid3-special-col-bg2.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\group-collapse.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\group-expand-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\group-expand.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\page-first.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\page-last.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\page-next.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\page-prev.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\refresh.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\row-expand-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\sort_asc.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\grid\sort_desc.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\menu\group-checked.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\menu\item-over-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\menu\item-over.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\menu\menu-parent.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\panel\corners-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\panel\left-right.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\panel\light-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\panel\tool-sprite-tpl.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\panel\tool-sprites.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\panel\tools-sprites-trans.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\panel\top-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\panel\top-bottom.png" />
+    <Content Include="test\js\extjs\resources\images\gray\panel\white-corners-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\panel\white-left-right.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\panel\white-top-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\progress\progress-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\qtip\bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\qtip\close.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\qtip\tip-anchor-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\qtip\tip-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\s.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\shared\hd-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\shared\left-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\shared\right-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\sizer\e-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\sizer\ne-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\sizer\nw-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\sizer\s-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\sizer\se-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\sizer\square.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\sizer\sw-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\slider\slider-thumb.png" />
+    <Content Include="test\js\extjs\resources\images\gray\slider\slider-v-thumb.png" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\scroll-left.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\scroll-right.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\scroller-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\tab-btm-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\tab-btm-over-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\tab-btm-over-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\tab-btm-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\tab-close.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\tab-strip-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\tab-strip-bg.png" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tabs\tabs-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\toolbar\bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\toolbar\btn-arrow-light.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\toolbar\btn-arrow.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\toolbar\btn-over-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\toolbar\gray-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\toolbar\more.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\toolbar\tb-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\toolbar\tb-btn-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tree\arrows.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tree\elbow-end-minus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tree\elbow-end-minus.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tree\elbow-end-plus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\tree\elbow-end-plus.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\window\icon-error.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\window\icon-info.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\window\icon-question.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\window\icon-warning.gif" />
+    <Content Include="test\js\extjs\resources\images\gray\window\left-corners.png" />
+    <Content Include="test\js\extjs\resources\images\gray\window\left-right.png" />
+    <Content Include="test\js\extjs\resources\images\gray\window\right-corners.png" />
+    <Content Include="test\js\extjs\resources\images\gray\window\top-bottom.png" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\bg-center.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\bg-left.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\bg-right.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\close.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\collapse.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\dlg-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\e-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\expand.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\hd-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\s-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\se-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\basic-dialog\w-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\gradient-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\grid\grid-split.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\grid\grid-vista-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\layout\collapse.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\layout\expand.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\layout\gradient-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\layout\ns-collapse.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\layout\ns-expand.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\layout\panel-close.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\layout\panel-title-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\layout\panel-title-light-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\layout\stick.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\layout\tab-close-on.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\layout\tab-close.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\qtip\bg.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\qtip\tip-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\s.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\e-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\e-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\ne-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\ne-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\nw-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\nw-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\s-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\s-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\se-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\se-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\sw-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\sizer\sw-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\tabs\tab-btm-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\tabs\tab-btm-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\tabs\tab-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\toolbar\gray-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\vista\toolbar\tb-btn-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\box\corners-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\box\corners.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\box\l-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\box\l.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\box\r-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\box\r.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\box\tb-blue.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\box\tb.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\button\arrow.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\button\btn.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\button\group-cs.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\button\group-lr.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\button\group-tb.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\button\s-arrow-b-noline.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\button\s-arrow-b.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\button\s-arrow-bo.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\button\s-arrow-noline.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\button\s-arrow-o.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\button\s-arrow.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\dd\drop-add.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\dd\drop-no.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\dd\drop-yes.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\editor\tb-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\form\checkbox.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\form\clear-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\form\date-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\form\error-tip-corners.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\form\exclamation.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\form\radio.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\form\search-trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\form\text-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\form\trigger-square.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\form\trigger-tpl.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\form\trigger.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\gradient-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\arrow-left-white.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\arrow-right-white.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\col-move-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\col-move-top.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\columns.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\dirty.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\done.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\drop-no.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\drop-yes.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\footer-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\grid-blue-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\grid-blue-split.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\grid-hrow.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\grid-loading.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\grid-split.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\grid-vista-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\grid3-hd-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\grid3-hrow-over.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\grid3-hrow.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\grid3-special-col-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\group-by.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\group-collapse.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\group-expand-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\group-expand.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\hd-pop.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\hmenu-asc.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\hmenu-desc.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\hmenu-lock.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\hmenu-lock.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\hmenu-unlock.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\hmenu-unlock.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\invalid_line.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\loading.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\mso-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\nowait.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\page-first-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\page-first.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\page-last-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\page-last.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\page-next-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\page-next.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\page-prev-disabled.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\page-prev.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\pick-button.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\refresh.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\row-check-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\row-expand-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\row-over.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\row-sel.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\sort-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\sort_asc.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\sort_desc.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\grid\wait.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\collapse.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\expand.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\gradient-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\mini-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\mini-left.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\mini-right.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\mini-top.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\ns-collapse.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\ns-expand.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\panel-close.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\panel-title-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\panel-title-light-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\stick.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\stuck.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\tab-close-on.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\layout\tab-close.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\menu\checked.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\menu\group-checked.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\menu\item-over.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\menu\menu-parent.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\menu\menu.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\menu\unchecked.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\panel\corners-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\panel\left-right.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\panel\light-hd.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\panel\tool-sprite-tpl.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\panel\tool-sprites.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\panel\tools-sprites-trans.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\panel\top-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\panel\top-bottom.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\panel\white-corners-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\panel\white-left-right.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\panel\white-top-bottom.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\progress\progress-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\qtip\bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\qtip\close.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\qtip\tip-anchor-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\qtip\tip-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\README.txt" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\s.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shadow-c.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shadow-lr.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shadow.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shared\blue-loading.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shared\calendar.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shared\glass-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shared\hd-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shared\large-loading.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shared\left-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shared\loading-balls.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shared\right-btn.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\shared\warning.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\e-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\e-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\ne-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\ne-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\nw-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\nw-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\s-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\s-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\se-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\se-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\square.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\sw-handle-dark.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\sizer\sw-handle.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\slider\slider-bg.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\slider\slider-thumb.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\slider\slider-v-bg.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\slider\slider-v-thumb.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\scroll-left.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\scroll-right.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\scroller-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\tab-btm-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\tab-btm-over-left-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\tab-btm-over-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\tab-btm-right-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\tab-close.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\tab-strip-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\tab-strip-bg.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tabs\tabs-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\toolbar\bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\toolbar\btn-arrow-light.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\toolbar\btn-arrow.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\toolbar\btn-over-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\toolbar\gray-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\toolbar\more.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\toolbar\tb-bg.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\toolbar\tb-btn-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\toolbar\tb-xl-btn-sprite.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\toolbar\tb-xl-sep.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\arrows.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\drop-add.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\drop-between.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\drop-no.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\drop-over.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\drop-under.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\drop-yes.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\elbow-end-minus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\elbow-end-minus.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\elbow-end-plus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\elbow-end-plus.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\elbow-end.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\elbow-line.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\elbow-minus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\elbow-minus.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\elbow-plus-nl.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\elbow-plus.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\elbow.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\folder-open.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\folder.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\leaf.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\loading.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\tree\s.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\window\icon-error.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\window\icon-info.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\window\icon-question.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\window\icon-warning.gif" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\window\left-corners.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\window\left-right.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\window\right-corners.png" />
+    <Content Include="test\js\extjs\resources\images\yourtheme\window\top-bottom.png" />
+    <Content Include="test\js\extjs\src\adapter\ext-base-dom-more.js" />
+    <Content Include="test\js\extjs\src\adapter\jquery-bridge.js" />
+    <Content Include="test\js\extjs\src\adapter\prototype-bridge.js" />
+    <Content Include="test\js\extjs\src\adapter\yui-bridge.js" />
+    <Content Include="test\js\extjs\src\core\CompositeElement.js" />
+    <Content Include="test\js\extjs\src\core\CompositeElementLite-more.js" />
+    <Content Include="test\js\extjs\src\core\DomHelper-more.js" />
+    <Content Include="test\js\extjs\src\core\Element-more.js" />
+    <Content Include="test\js\extjs\src\core\Element.alignment.js" />
+    <Content Include="test\js\extjs\src\core\Element.dd.js" />
+    <Content Include="test\js\extjs\src\core\Element.fx-more.js" />
+    <Content Include="test\js\extjs\src\core\Element.insertion-more.js" />
+    <Content Include="test\js\extjs\src\core\Element.keys.js" />
+    <Content Include="test\js\extjs\src\core\Element.legacy.js" />
+    <Content Include="test\js\extjs\src\core\Element.position-more.js" />
+    <Content Include="test\js\extjs\src\core\Element.scroll-more.js" />
+    <Content Include="test\js\extjs\src\core\Element.style-more.js" />
+    <Content Include="test\js\extjs\src\core\Element.traversal-more.js" />
+    <Content Include="test\js\extjs\src\core\Error.js" />
+    <Content Include="test\js\extjs\src\core\EventManager-more.js" />
+    <Content Include="test\js\extjs\src\core\Ext-more.js" />
+    <Content Include="test\js\extjs\src\core\Template-more.js" />
+    <Content Include="test\js\extjs\src\data\Api.js" />
+    <Content Include="test\js\extjs\src\data\ArrayReader.js" />
+    <Content Include="test\js\extjs\src\data\ArrayStore.js" />
+    <Content Include="test\js\extjs\src\data\DataField.js" />
+    <Content Include="test\js\extjs\src\data\DataProxy.js" />
+    <Content Include="test\js\extjs\src\data\DataReader.js" />
+    <Content Include="test\js\extjs\src\data\DataWriter.js" />
+    <Content Include="test\js\extjs\src\data\DirectProxy.js" />
+    <Content Include="test\js\extjs\src\data\DirectStore.js" />
+    <Content Include="test\js\extjs\src\data\GroupingStore.js" />
+    <Content Include="test\js\extjs\src\data\HttpProxy.js" />
+    <Content Include="test\js\extjs\src\data\JsonReader.js" />
+    <Content Include="test\js\extjs\src\data\JsonStore.js" />
+    <Content Include="test\js\extjs\src\data\JsonWriter.js" />
+    <Content Include="test\js\extjs\src\data\MemoryProxy.js" />
+    <Content Include="test\js\extjs\src\data\Record.js" />
+    <Content Include="test\js\extjs\src\data\Request.js" />
+    <Content Include="test\js\extjs\src\data\Response.js" />
+    <Content Include="test\js\extjs\src\data\ScriptTagProxy.js" />
+    <Content Include="test\js\extjs\src\data\SortTypes.js" />
+    <Content Include="test\js\extjs\src\data\Store.js" />
+    <Content Include="test\js\extjs\src\data\StoreMgr.js" />
+    <Content Include="test\js\extjs\src\data\Tree.js" />
+    <Content Include="test\js\extjs\src\data\Types.js" />
+    <Content Include="test\js\extjs\src\data\XmlReader.js" />
+    <Content Include="test\js\extjs\src\data\XmlStore.js" />
+    <Content Include="test\js\extjs\src\data\XmlWriter.js" />
+    <Content Include="test\js\extjs\src\dd\DDCore.js" />
+    <Content Include="test\js\extjs\src\dd\DragSource.js" />
+    <Content Include="test\js\extjs\src\dd\DragTracker.js" />
+    <Content Include="test\js\extjs\src\dd\DragZone.js" />
+    <Content Include="test\js\extjs\src\dd\DropTarget.js" />
+    <Content Include="test\js\extjs\src\dd\DropZone.js" />
+    <Content Include="test\js\extjs\src\dd\Registry.js" />
+    <Content Include="test\js\extjs\src\dd\ScrollManager.js" />
+    <Content Include="test\js\extjs\src\dd\StatusProxy.js" />
+    <Content Include="test\js\extjs\src\debug.js" />
+    <Content Include="test\js\extjs\src\direct\Direct.js" />
+    <Content Include="test\js\extjs\src\direct\Event.js" />
+    <Content Include="test\js\extjs\src\direct\JsonProvider.js" />
+    <Content Include="test\js\extjs\src\direct\PollingProvider.js" />
+    <Content Include="test\js\extjs\src\direct\Provider.js" />
+    <Content Include="test\js\extjs\src\direct\RemotingProvider.js" />
+    <Content Include="test\js\extjs\src\direct\Transaction.js" />
+    <Content Include="test\js\extjs\src\ext-core\examples\carousel\carousel.js" />
+    <Content Include="test\js\extjs\src\ext-core\examples\jsonp\jsonp.js" />
+    <Content Include="test\js\extjs\src\ext-core\examples\lightbox\lightbox.js" />
+    <Content Include="test\js\extjs\src\ext-core\examples\menu\menu.js" />
+    <Content Include="test\js\extjs\src\ext-core\examples\rating\rating.js" />
+    <Content Include="test\js\extjs\src\ext-core\examples\tabs\tabs.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\adapter\ext-base-ajax.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\adapter\ext-base-anim-extra.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\adapter\ext-base-anim.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\adapter\ext-base-begin.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\adapter\ext-base-dom.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\adapter\ext-base-end.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\adapter\ext-base-event.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\adapter\ext-base-point.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\adapter\ext-base-region.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\CompositeElementLite.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\DomHelper.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\DomQuery.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\Element.fx.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\Element.insertion.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\Element.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\Element.position.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\Element.scroll.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\Element.style.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\Element.traversal.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\EventManager.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\Ext.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\Fx.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\core\Template.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\data\Connection.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\util\DelayedTask.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\util\JSON.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\util\Observable.js" />
+    <Content Include="test\js\extjs\src\ext-core\src\util\TaskMgr.js" />
+    <Content Include="test\js\extjs\src\ext-core\test\yui_2.6.0\yui\build\logger\logger-min.js" />
+    <Content Include="test\js\extjs\src\ext-core\test\yui_2.6.0\yui\build\yahoo-dom-event\yahoo-dom-event.js" />
+    <Content Include="test\js\extjs\src\ext-core\test\yui_2.6.0\yui\build\yuitest\yuitest-min.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-af.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-bg.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-ca.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-cs.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-da.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-de.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-el_GR.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-en.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-en_GB.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-es.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-fa.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-fi.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-fr.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-fr_CA.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-gr.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-he.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-hr.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-hu.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-id.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-it.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-ja.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-ko.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-lt.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-lv.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-mk.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-nl.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-no_NB.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-no_NN.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-pl.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-pt.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-pt_BR.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-pt_PT.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-ro.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-ru.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-sk.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-sl.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-sr.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-sr_RS.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-sv_SE.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-th.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-tr.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-ukr.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-vn.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-zh_CN.js" />
+    <Content Include="test\js\extjs\src\locale\ext-lang-zh_TW.js" />
+    <Content Include="test\js\extjs\src\state\CookieProvider.js" />
+    <Content Include="test\js\extjs\src\state\Provider.js" />
+    <Content Include="test\js\extjs\src\state\StateManager.js" />
+    <Content Include="test\js\extjs\src\util\ClickRepeater.js" />
+    <Content Include="test\js\extjs\src\util\Cookies.js" />
+    <Content Include="test\js\extjs\src\util\CSS.js" />
+    <Content Include="test\js\extjs\src\util\Date.js" />
+    <Content Include="test\js\extjs\src\util\Format.js" />
+    <Content Include="test\js\extjs\src\util\History.js" />
+    <Content Include="test\js\extjs\src\util\KeyMap.js" />
+    <Content Include="test\js\extjs\src\util\KeyNav.js" />
+    <Content Include="test\js\extjs\src\util\MixedCollection.js" />
+    <Content Include="test\js\extjs\src\util\Observable-more.js" />
+    <Content Include="test\js\extjs\src\util\TextMetrics.js" />
+    <Content Include="test\js\extjs\src\util\UpdateManager.js" />
+    <Content Include="test\js\extjs\src\util\XTemplate.js" />
+    <Content Include="test\js\extjs\src\widgets\Action.js" />
+    <Content Include="test\js\extjs\src\widgets\BoxComponent.js" />
+    <Content Include="test\js\extjs\src\widgets\Button.js" />
+    <Content Include="test\js\extjs\src\widgets\ButtonGroup.js" />
+    <Content Include="test\js\extjs\src\widgets\chart\Chart.js" />
+    <Content Include="test\js\extjs\src\widgets\chart\EventProxy.js" />
+    <Content Include="test\js\extjs\src\widgets\chart\FlashComponent.js" />
+    <Content Include="test\js\extjs\src\widgets\chart\swfobject.js" />
+    <Content Include="test\js\extjs\src\widgets\ColorPalette.js" />
+    <Content Include="test\js\extjs\src\widgets\Component.js" />
+    <Content Include="test\js\extjs\src\widgets\ComponentMgr.js" />
+    <Content Include="test\js\extjs\src\widgets\Container.js" />
+    <Content Include="test\js\extjs\src\widgets\CycleButton.js" />
+    <Content Include="test\js\extjs\src\widgets\DataView.js" />
+    <Content Include="test\js\extjs\src\widgets\DatePicker.js" />
+    <Content Include="test\js\extjs\src\widgets\Editor.js" />
+    <Content Include="test\js\extjs\src\widgets\form\Action.js" />
+    <Content Include="test\js\extjs\src\widgets\form\BasicForm.js" />
+    <Content Include="test\js\extjs\src\widgets\form\Checkbox.js" />
+    <Content Include="test\js\extjs\src\widgets\form\CheckboxGroup.js" />
+    <Content Include="test\js\extjs\src\widgets\form\Combo.js" />
+    <Content Include="test\js\extjs\src\widgets\form\CompositeField.js" />
+    <Content Include="test\js\extjs\src\widgets\form\DateField.js" />
+    <Content Include="test\js\extjs\src\widgets\form\DisplayField.js" />
+    <Content Include="test\js\extjs\src\widgets\form\Field.js" />
+    <Content Include="test\js\extjs\src\widgets\form\FieldSet.js" />
+    <Content Include="test\js\extjs\src\widgets\form\Form.js" />
+    <Content Include="test\js\extjs\src\widgets\form\Hidden.js" />
+    <Content Include="test\js\extjs\src\widgets\form\HtmlEditor.js" />
+    <Content Include="test\js\extjs\src\widgets\form\Label.js" />
+    <Content Include="test\js\extjs\src\widgets\form\NumberField.js" />
+    <Content Include="test\js\extjs\src\widgets\form\Radio.js" />
+    <Content Include="test\js\extjs\src\widgets\form\RadioGroup.js" />
+    <Content Include="test\js\extjs\src\widgets\form\SliderField.js" />
+    <Content Include="test\js\extjs\src\widgets\form\TextArea.js" />
+    <Content Include="test\js\extjs\src\widgets\form\TextField.js" />
+    <Content Include="test\js\extjs\src\widgets\form\TimeField.js" />
+    <Content Include="test\js\extjs\src\widgets\form\TriggerField.js" />
+    <Content Include="test\js\extjs\src\widgets\form\VTypes.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\AbstractSelectionModel.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\CellSelectionModel.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\CheckboxSelectionModel.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\Column.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\ColumnDD.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\ColumnModel.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\ColumnSplitDD.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\EditorGrid.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\GridDD.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\GridEditor.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\GridPanel.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\GridView.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\GroupingView.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\PropertyGrid.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\RowNumberer.js" />
+    <Content Include="test\js\extjs\src\widgets\grid\RowSelectionModel.js" />
+    <Content Include="test\js\extjs\src\widgets\Layer.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\AbsoluteLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\AccordionLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\AnchorLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\AutoLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\BorderLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\BoxLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\CardLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\ColumnLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\ContainerLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\FitLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\FormLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\MenuLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\TableLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\layout\ToolbarLayout.js" />
+    <Content Include="test\js\extjs\src\widgets\list\Column.js" />
+    <Content Include="test\js\extjs\src\widgets\list\ColumnResizer.js" />
+    <Content Include="test\js\extjs\src\widgets\list\ListView.js" />
+    <Content Include="test\js\extjs\src\widgets\list\Sorter.js" />
+    <Content Include="test\js\extjs\src\widgets\LoadMask.js" />
+    <Content Include="test\js\extjs\src\widgets\menu\BaseItem.js" />
+    <Content Include="test\js\extjs\src\widgets\menu\CheckItem.js" />
+    <Content Include="test\js\extjs\src\widgets\menu\ColorMenu.js" />
+    <Content Include="test\js\extjs\src\widgets\menu\DateMenu.js" />
+    <Content Include="test\js\extjs\src\widgets\menu\Item.js" />
+    <Content Include="test\js\extjs\src\widgets\menu\Menu.js" />
+    <Content Include="test\js\extjs\src\widgets\menu\MenuMgr.js" />
+    <Content Include="test\js\extjs\src\widgets\menu\Separator.js" />
+    <Content Include="test\js\extjs\src\widgets\menu\TextItem.js" />
+    <Content Include="test\js\extjs\src\widgets\MessageBox.js" />
+    <Content Include="test\js\extjs\src\widgets\PagingToolbar.js" />
+    <Content Include="test\js\extjs\src\widgets\Panel.js" />
+    <Content Include="test\js\extjs\src\widgets\PanelDD.js" />
+    <Content Include="test\js\extjs\src\widgets\ProgressBar.js" />
+    <Content Include="test\js\extjs\src\widgets\Resizable.js" />
+    <Content Include="test\js\extjs\src\widgets\Shadow.js" />
+    <Content Include="test\js\extjs\src\widgets\Slider.js" />
+    <Content Include="test\js\extjs\src\widgets\SplitBar.js" />
+    <Content Include="test\js\extjs\src\widgets\SplitButton.js" />
+    <Content Include="test\js\extjs\src\widgets\TabPanel.js" />
+    <Content Include="test\js\extjs\src\widgets\tips\QuickTip.js" />
+    <Content Include="test\js\extjs\src\widgets\tips\QuickTips.js" />
+    <Content Include="test\js\extjs\src\widgets\tips\SliderTip.js" />
+    <Content Include="test\js\extjs\src\widgets\tips\Tip.js" />
+    <Content Include="test\js\extjs\src\widgets\tips\ToolTip.js" />
+    <Content Include="test\js\extjs\src\widgets\Toolbar.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\AsyncTreeNode.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\TreeDragZone.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\TreeDropZone.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\TreeEditor.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\TreeEventModel.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\TreeFilter.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\TreeLoader.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\TreeNode.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\TreeNodeUI.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\TreePanel.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\TreeSelectionModel.js" />
+    <Content Include="test\js\extjs\src\widgets\tree\TreeSorter.js" />
+    <Content Include="test\js\extjs\src\widgets\Viewport.js" />
+    <Content Include="test\js\extjs\src\widgets\Window.js" />
+    <Content Include="test\js\extjs\src\widgets\WindowManager.js" />
+    <Content Include="test\js\extjs\vswd-ext_2.2.js" />
+    <Content Include="test\js\jquerym.js" />
+    <Content Include="test\test01.aspx" />
+    <Content Include="test\test02.aspx" />
+    <Content Include="tools\baidu.aspx" />
+    <Content Include="tools\barcode.aspx" />
+    <Content Include="ttt\test001.aspx" />
+    <Content Include="ttt\upload\AC_OETags.js" />
+    <Content Include="ttt\upload\from-download.gif" />
+    <Content Include="ttt\upload\history\history.css" />
+    <Content Include="ttt\upload\history\history.js" />
+    <Content Include="ttt\upload\history\historyFrame.html" />
+    <Content Include="ttt\upload\images\delete.gif" />
+    <Content Include="ttt\upload\KunLunUpFile.html" />
+    <Content Include="ttt\upload\KunLunUpFile.swf" />
+    <Content Include="ttt\upload\playerProductInstall.swf" />
+    <Content Include="ttt\upload\UploadFile.aspx" />
+    <Content Include="umeditor\dialogs\anchor\anchor.html" />
+    <Content Include="umeditor\dialogs\attachment\attachment.css" />
+    <Content Include="umeditor\dialogs\attachment\attachment.html" />
+    <Content Include="umeditor\dialogs\attachment\attachment.js" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_jpg.gif" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="umeditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="umeditor\dialogs\attachment\images\alignicon.gif" />
+    <Content Include="umeditor\dialogs\attachment\images\alignicon.png" />
+    <Content Include="umeditor\dialogs\attachment\images\bg.png" />
+    <Content Include="umeditor\dialogs\attachment\images\file-icons.gif" />
+    <Content Include="umeditor\dialogs\attachment\images\file-icons.png" />
+    <Content Include="umeditor\dialogs\attachment\images\icons.gif" />
+    <Content Include="umeditor\dialogs\attachment\images\icons.png" />
+    <Content Include="umeditor\dialogs\attachment\images\image.png" />
+    <Content Include="umeditor\dialogs\attachment\images\progress.png" />
+    <Content Include="umeditor\dialogs\attachment\images\success.gif" />
+    <Content Include="umeditor\dialogs\attachment\images\success.png" />
+    <Content Include="umeditor\dialogs\background\background.css" />
+    <Content Include="umeditor\dialogs\background\background.html" />
+    <Content Include="umeditor\dialogs\background\background.js" />
+    <Content Include="umeditor\dialogs\background\images\bg.png" />
+    <Content Include="umeditor\dialogs\background\images\success.png" />
+    <Content Include="umeditor\dialogs\charts\chart.config.js" />
+    <Content Include="umeditor\dialogs\charts\charts.css" />
+    <Content Include="umeditor\dialogs\charts\charts.html" />
+    <Content Include="umeditor\dialogs\charts\charts.js" />
+    <Content Include="umeditor\dialogs\charts\images\charts0.png" />
+    <Content Include="umeditor\dialogs\charts\images\charts1.png" />
+    <Content Include="umeditor\dialogs\charts\images\charts2.png" />
+    <Content Include="umeditor\dialogs\charts\images\charts3.png" />
+    <Content Include="umeditor\dialogs\charts\images\charts4.png" />
+    <Content Include="umeditor\dialogs\charts\images\charts5.png" />
+    <Content Include="umeditor\dialogs\emotion\emotion.css" />
+    <Content Include="umeditor\dialogs\emotion\emotion.html" />
+    <Content Include="umeditor\dialogs\emotion\emotion.js" />
+    <Content Include="umeditor\dialogs\emotion\images\0.gif" />
+    <Content Include="umeditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="umeditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="umeditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="umeditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="umeditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="umeditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="umeditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="umeditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="umeditor\dialogs\gmap\gmap.html" />
+    <Content Include="umeditor\dialogs\help\help.css" />
+    <Content Include="umeditor\dialogs\help\help.html" />
+    <Content Include="umeditor\dialogs\help\help.js" />
+    <Content Include="umeditor\dialogs\image\image.css" />
+    <Content Include="umeditor\dialogs\image\image.html" />
+    <Content Include="umeditor\dialogs\image\image.js" />
+    <Content Include="umeditor\dialogs\image\images\alignicon.jpg" />
+    <Content Include="umeditor\dialogs\image\images\bg.png" />
+    <Content Include="umeditor\dialogs\image\images\icons.gif" />
+    <Content Include="umeditor\dialogs\image\images\icons.png" />
+    <Content Include="umeditor\dialogs\image\images\image.png" />
+    <Content Include="umeditor\dialogs\image\images\progress.png" />
+    <Content Include="umeditor\dialogs\image\images\success.gif" />
+    <Content Include="umeditor\dialogs\image\images\success.png" />
+    <Content Include="umeditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="umeditor\dialogs\internal.js" />
+    <Content Include="umeditor\dialogs\link\link.html" />
+    <Content Include="umeditor\dialogs\map\map.html" />
+    <Content Include="umeditor\dialogs\map\show.html" />
+    <Content Include="umeditor\dialogs\music\music.css" />
+    <Content Include="umeditor\dialogs\music\music.html" />
+    <Content Include="umeditor\dialogs\music\music.js" />
+    <Content Include="umeditor\dialogs\preview\preview.html" />
+    <Content Include="umeditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\size.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="umeditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="umeditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="umeditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="umeditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="umeditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="umeditor\dialogs\searchreplace\searchreplace.js" />
+    <Content Include="umeditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="umeditor\dialogs\spechars\spechars.html" />
+    <Content Include="umeditor\dialogs\spechars\spechars.js" />
+    <Content Include="umeditor\dialogs\table\dragicon.png" />
+    <Content Include="umeditor\dialogs\table\edittable.css" />
+    <Content Include="umeditor\dialogs\table\edittable.html" />
+    <Content Include="umeditor\dialogs\table\edittable.js" />
+    <Content Include="umeditor\dialogs\table\edittd.html" />
+    <Content Include="umeditor\dialogs\table\edittip.html" />
+    <Content Include="umeditor\dialogs\template\config.js" />
+    <Content Include="umeditor\dialogs\template\images\bg.gif" />
+    <Content Include="umeditor\dialogs\template\images\pre0.png" />
+    <Content Include="umeditor\dialogs\template\images\pre1.png" />
+    <Content Include="umeditor\dialogs\template\images\pre2.png" />
+    <Content Include="umeditor\dialogs\template\images\pre3.png" />
+    <Content Include="umeditor\dialogs\template\images\pre4.png" />
+    <Content Include="umeditor\dialogs\template\template.css" />
+    <Content Include="umeditor\dialogs\template\template.html" />
+    <Content Include="umeditor\dialogs\template\template.js" />
+    <Content Include="umeditor\dialogs\video\images\bg.png" />
+    <Content Include="umeditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="umeditor\dialogs\video\images\file-icons.gif" />
+    <Content Include="umeditor\dialogs\video\images\file-icons.png" />
+    <Content Include="umeditor\dialogs\video\images\icons.gif" />
+    <Content Include="umeditor\dialogs\video\images\icons.png" />
+    <Content Include="umeditor\dialogs\video\images\image.png" />
+    <Content Include="umeditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="umeditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="umeditor\dialogs\video\images\progress.png" />
+    <Content Include="umeditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="umeditor\dialogs\video\images\success.gif" />
+    <Content Include="umeditor\dialogs\video\images\success.png" />
+    <Content Include="umeditor\dialogs\video\video.css" />
+    <Content Include="umeditor\dialogs\video\video.html" />
+    <Content Include="umeditor\dialogs\video\video.js" />
+    <Content Include="umeditor\dialogs\webapp\webapp.html" />
+    <Content Include="umeditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="umeditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="umeditor\dialogs\wordimage\tangram.js" />
+    <Content Include="umeditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="umeditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="umeditor\index.html" />
+    <Content Include="umeditor\lang\en\en.js" />
+    <Content Include="umeditor\lang\en\images\addimage.png" />
+    <Content Include="umeditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="umeditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="umeditor\lang\en\images\background.png" />
+    <Content Include="umeditor\lang\en\images\button.png" />
+    <Content Include="umeditor\lang\en\images\copy.png" />
+    <Content Include="umeditor\lang\en\images\deletedisable.png" />
+    <Content Include="umeditor\lang\en\images\deleteenable.png" />
+    <Content Include="umeditor\lang\en\images\listbackground.png" />
+    <Content Include="umeditor\lang\en\images\localimage.png" />
+    <Content Include="umeditor\lang\en\images\music.png" />
+    <Content Include="umeditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="umeditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="umeditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="umeditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="umeditor\lang\en\images\upload.png" />
+    <Content Include="umeditor\lang\zh-cn\images\copy.png" />
+    <Content Include="umeditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="umeditor\lang\zh-cn\images\music.png" />
+    <Content Include="umeditor\lang\zh-cn\images\upload.png" />
+    <Content Include="umeditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="umeditor\themes\default\css\ueditor.css" />
+    <Content Include="umeditor\themes\default\css\ueditor.min.css" />
+    <Content Include="umeditor\themes\default\dialogbase.css" />
+    <Content Include="umeditor\themes\default\images\anchor.gif" />
+    <Content Include="umeditor\themes\default\images\arrow.png" />
+    <Content Include="umeditor\themes\default\images\arrow_down.png" />
+    <Content Include="umeditor\themes\default\images\arrow_up.png" />
+    <Content Include="umeditor\themes\default\images\button-bg.gif" />
+    <Content Include="umeditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="umeditor\themes\default\images\charts.png" />
+    <Content Include="umeditor\themes\default\images\cursor_h.gif" />
+    <Content Include="umeditor\themes\default\images\cursor_h.png" />
+    <Content Include="umeditor\themes\default\images\cursor_v.gif" />
+    <Content Include="umeditor\themes\default\images\cursor_v.png" />
+    <Content Include="umeditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="umeditor\themes\default\images\filescan.png" />
+    <Content Include="umeditor\themes\default\images\highlighted.gif" />
+    <Content Include="umeditor\themes\default\images\icons-all.gif" />
+    <Content Include="umeditor\themes\default\images\icons.gif" />
+    <Content Include="umeditor\themes\default\images\icons.png" />
+    <Content Include="umeditor\themes\default\images\loaderror.png" />
+    <Content Include="umeditor\themes\default\images\loading.gif" />
+    <Content Include="umeditor\themes\default\images\lock.gif" />
+    <Content Include="umeditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="umeditor\themes\default\images\pagebreak.gif" />
+    <Content Include="umeditor\themes\default\images\scale.png" />
+    <Content Include="umeditor\themes\default\images\sortable.png" />
+    <Content Include="umeditor\themes\default\images\spacer.gif" />
+    <Content Include="umeditor\themes\default\images\sparator_v.png" />
+    <Content Include="umeditor\themes\default\images\table-cell-align.png" />
+    <Content Include="umeditor\themes\default\images\tangram-colorpicker.png" />
+    <Content Include="umeditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="umeditor\themes\default\images\unhighlighted.gif" />
+    <Content Include="umeditor\themes\default\images\upload.png" />
+    <Content Include="umeditor\themes\default\images\videologo.gif" />
+    <Content Include="umeditor\themes\default\images\word.gif" />
+    <Content Include="umeditor\themes\default\images\wordpaste.png" />
+    <Content Include="umeditor\themes\iframe.css" />
+    <Content Include="umeditor\third-party\codemirror\codemirror.css" />
+    <Content Include="umeditor\third-party\codemirror\codemirror.js" />
+    <Content Include="umeditor\third-party\highcharts\adapters\mootools-adapter.js" />
+    <Content Include="umeditor\third-party\highcharts\adapters\mootools-adapter.src.js" />
+    <Content Include="umeditor\third-party\highcharts\adapters\prototype-adapter.js" />
+    <Content Include="umeditor\third-party\highcharts\adapters\prototype-adapter.src.js" />
+    <Content Include="umeditor\third-party\highcharts\adapters\standalone-framework.js" />
+    <Content Include="umeditor\third-party\highcharts\adapters\standalone-framework.src.js" />
+    <Content Include="umeditor\third-party\highcharts\highcharts-more.js" />
+    <Content Include="umeditor\third-party\highcharts\highcharts-more.src.js" />
+    <Content Include="umeditor\third-party\highcharts\highcharts.js" />
+    <Content Include="umeditor\third-party\highcharts\highcharts.src.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\annotations.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\annotations.src.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\canvas-tools.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\canvas-tools.src.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\data.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\data.src.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\drilldown.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\drilldown.src.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\exporting.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\exporting.src.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\funnel.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\funnel.src.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\heatmap.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\heatmap.src.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\map.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\map.src.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\no-data-to-display.js" />
+    <Content Include="umeditor\third-party\highcharts\modules\no-data-to-display.src.js" />
+    <Content Include="umeditor\third-party\highcharts\themes\dark-blue.js" />
+    <Content Include="umeditor\third-party\highcharts\themes\dark-green.js" />
+    <Content Include="umeditor\third-party\highcharts\themes\gray.js" />
+    <Content Include="umeditor\third-party\highcharts\themes\grid.js" />
+    <Content Include="umeditor\third-party\highcharts\themes\skies.js" />
+    <Content Include="umeditor\third-party\jquery-1.10.2.js" />
+    <Content Include="umeditor\third-party\jquery-1.10.2.min.js" />
+    <Content Include="umeditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="umeditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="umeditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="umeditor\third-party\video-js\video-js.css" />
+    <Content Include="umeditor\third-party\video-js\video-js.min.css" />
+    <Content Include="umeditor\third-party\video-js\video-js.swf" />
+    <Content Include="umeditor\third-party\video-js\video.dev.js" />
+    <Content Include="umeditor\third-party\video-js\video.js" />
+    <Content Include="umeditor\third-party\webuploader\Uploader.swf" />
+    <Content Include="umeditor\third-party\webuploader\webuploader.css" />
+    <Content Include="umeditor\third-party\webuploader\webuploader.custom.js" />
+    <Content Include="umeditor\third-party\webuploader\webuploader.custom.min.js" />
+    <Content Include="umeditor\third-party\webuploader\webuploader.flashonly.js" />
+    <Content Include="umeditor\third-party\webuploader\webuploader.flashonly.min.js" />
+    <Content Include="umeditor\third-party\webuploader\webuploader.html5only.js" />
+    <Content Include="umeditor\third-party\webuploader\webuploader.html5only.min.js" />
+    <Content Include="umeditor\third-party\webuploader\webuploader.js" />
+    <Content Include="umeditor\third-party\webuploader\webuploader.min.js" />
+    <Content Include="umeditor\third-party\webuploader\webuploader.withoutimage.js" />
+    <Content Include="umeditor\third-party\webuploader\webuploader.withoutimage.min.js" />
+    <Content Include="umeditor\third-party\zeroclipboard\ZeroClipboard.js" />
+    <Content Include="umeditor\third-party\zeroclipboard\ZeroClipboard.min.js" />
+    <Content Include="umeditor\third-party\zeroclipboard\ZeroClipboard.swf" />
+    <Content Include="umeditor\ueditor.all.js" />
+    <Content Include="umeditor\ueditor.all.min.js" />
+    <Content Include="umeditor\ueditor.config.js" />
+    <Content Include="umeditor\ueditor.parse.js" />
+    <Content Include="umeditor\ueditor.parse.min.js" />
+    <Content Include="userControl\contentAdv01.html" />
+    <Content Include="userControl\foot_utf8.html" />
+    <Content Include="userControl\head_top.html" />
+    <Content Include="userControl\head_utf8.html" />
+    <Content Include="userControl\pagercontrol.ascx" />
+    <Content Include="userControl\Side.html" />
+    <Content Include="wap\aaa.html" />
+    <Content Include="wap\article\content1.html" />
+    <Content Include="wap\art\61.html" />
+    <Content Include="wap\content.html" />
+    <Content Include="wap\css%28未使用%29\base.css" />
+    <Content Include="wap\css%28未使用%29\styles.css" />
+    <Content Include="wap\html5\bg.png" />
+    <Content Include="wap\html5\bg_foot.png" />
+    <Content Include="wap\html5\holiday_bg.png" />
+    <Content Include="wap\html5\main.css" />
+    <Content Include="wap\html5\n.png" />
+    <Content Include="wap\html5\nhover.png" />
+    <Content Include="wap\html5\persent.png" />
+    <Content Include="wap\html5\today.png" />
+    <Content Include="wap\html5\work_bg.png" />
+    <Content Include="wap\images\app.png" />
+    <Content Include="wap\images\back.png" />
+    <Content Include="wap\images\home.png" />
+    <Content Include="wap\images\logo.jpg" />
+    <Content Include="wap\images\more - 复制.png" />
+    <Content Include="wap\images\more.png" />
+    <Content Include="wap\images\nav_btn.png" />
+    <Content Include="wap\images\news.jpg" />
+    <Content Include="wap\images\query.png" />
+    <Content Include="wap\index927.aspx" />
+    <Content Include="wap\index.html" />
+    <Content Include="wap\js\common.js" />
+    <Content Include="wap\js\content.js" />
+    <Content Include="wap\js\jquery.min.js" />
+    <Content Include="wap\js\script.js" />
+    <Content Include="wap\list.aspx" />
+    <Content Include="wap\temp%28未使用%29\book.html" />
+    <Content Include="wap\temp%28未使用%29\content.html" />
+    <Content Include="wap\temp%28未使用%29\index.html" />
+    <Content Include="wap\temp%28未使用%29\list.html" />
+    <Content Include="wap\temp%28未使用%29\news_list.html" />
+    <Content Include="wap\temp%28未使用%29\pro_detail.html" />
+    <Content Include="wap\uploads\art_20150105092512627fde13bc23498db31ab7428cfdd39d.jpg" />
+    <Content Include="wap\uploads\banner.gif" />
+    <Content Include="wap\uploads\logo.png" />
+    <Content Include="wap\uploads\nopropic.jpg" />
+    <Content Include="wap\uploads\product.gif" />
+    <Content Include="wap\userControl\index.html" />
+    <Content Include="wap\userControl\wap_c_baidu_01.html" />
+    <Content Include="wap\userControl\wap_foot.html" />
+    <Content Include="wap\userControl\wap_adv.html" />
+    <Content Include="web.config" />
+    <Content Include="xzdd927\admin\admin_list.aspx" />
+    <Content Include="xzdd927\admin\update_admin.aspx" />
+    <Content Include="xzdd927\ajax\ajax_m.aspx" />
+    <Content Include="xzdd927\article\add_article.aspx" />
+    <Content Include="xzdd927\article\article_list.aspx" />
+    <Content Include="xzdd927\article\article_tag.aspx" />
+    <Content Include="xzdd927\article\article_tag_info.aspx" />
+    <Content Include="xzdd927\article\article_type.aspx" />
+    <Content Include="xzdd927\article\image_list.aspx" />
+    <Content Include="xzdd927\article\saveImage.aspx" />
+    <Content Include="xzdd927\article\saveXiuxiu.aspx" />
+    <Content Include="xzdd927\article\UpdateHtml.aspx" />
+    <Content Include="xzdd927\friendlink\list.aspx" />
+    <Content Include="xzdd927\friendlink\order.aspx" />
+    <Content Include="xzdd927\index.aspx" />
+    <Content Include="xzdd927\index_left.aspx" />
+    <Content Include="xzdd927\index_top.aspx" />
+    <Content Include="xzdd927\login.aspx" />
+    <Content Include="xzdd927\login.html" />
+    <Content Include="xzdd927\system\upload.aspx" />
+    <Content Include="zhuanti\css\css_zt_common_1.css" />
+    <Content Include="zhuanti\images\adbg.jpg" />
+    <Content Include="zhuanti\images\baike_mbg.jpg" />
+    <Content Include="zhuanti\images\bk_10.jpg" />
+    <Content Include="zhuanti\images\feizi.jpg" />
+    <Content Include="zhuanti\images\index.2013.bg.png" />
+    <Content Include="zhuanti\images\topbg.jpg" />
+    <Content Include="zhuanti\renshenwen\css.css" />
+    <Content Include="zhuanti\renshenwen\images\art01.jpg" />
+    <Content Include="zhuanti\renshenwen\images\art02.jpg" />
+    <Content Include="zhuanti\renshenwen\images\art03.jpg" />
+    <Content Include="zhuanti\renshenwen\images\banner.jpg" />
+    <Content Include="zhuanti\renshenwen\images\what01.jpg" />
+    <Content Include="zhuanti\renshenwen\images\what02.jpg" />
+    <Content Include="zhuanti\renshenwen\images\what03.jpg" />
+    <None Include="zhuanti\youxiaoxj\index.shtml" />
+    <None Include="zhuanti\yufangzhen\index.shtml" />
+    <None Include="zhuanti\shuohua\index.shtml" />
+    <None Include="zhuanti\yanshi\index.shtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+    <Folder Include="test\images\" />
+    <Folder Include="test\js\extjs\resources\images\vista\dd\" />
+    <Folder Include="test\js\extjs\resources\images\vista\tree\" />
+    <Folder Include="test\js\extjs\src\ext-core\examples\carousel\images\" />
+    <Folder Include="test\js\extjs\src\ext-core\examples\carousel\slides\" />
+    <Folder Include="test\js\extjs\src\ext-core\examples\combo\" />
+    <Folder Include="test\js\extjs\src\ext-core\examples\jsonp\images\" />
+    <Folder Include="test\js\extjs\src\ext-core\examples\lightbox\images\" />
+    <Folder Include="test\js\extjs\src\ext-core\examples\menu\images\" />
+    <Folder Include="test\js\extjs\src\ext-core\examples\rating\images\" />
+    <Folder Include="test\js\extjs\src\ext-core\examples\tabs\images\" />
+    <Folder Include="test\js\extjs\src\ext-core\test\yui_2.6.0\yui\build\logger\assets\skins\sam\" />
+    <Folder Include="test\js\extjs\src\ext-core\test\yui_2.6.0\yui\build\yuitest\assets\skins\sam\" />
+    <Folder Include="wap\c\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>42899</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,10 @@
+html, body {height:100%; margin: 0; padding: 0; }
+body {
+	font-family: "ËÎÌו",Verdana, helvetica, arial, sans-serif;
+	font-size: 14px;
+	background: #FdFdFd;
+	color: #333;
+	border-right:solid 2px #a8a8a8;
+}
+a,a:hover,a:visited{color:#333; text-decoration:none;}
+a img { border: none; }

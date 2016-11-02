@@ -1,0 +1,287 @@
+﻿@charset "utf-8";
+
+/*全局文字样式*/
+body,td,th {
+	font-family: 宋体;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+	text-decoration: none;
+	margin-bottom:0px;
+	margin-right:0px;
+	margin-top:0px;
+	margin-left:0px;
+}
+/*全局链接样式*/
+a:link{ font-family:宋体; font-size:12px; color:#000000;text-decoration:none;}
+a:visited{ font-family:宋体; font-size:12px; color:#000000;text-decoration:none;}
+a:hover{ font-family:宋体; font-size:12px; color:#BA2636;text-decoration:none;}
+a:active{ font-family:宋体; font-size:12px; color:#BA2636;text-decoration:none;}
+
+/*20号字体*/
+.blue_20px{ font-size:20px; font-family:黑体; color:#0158A7;}
+	.blue_20px a:link{ font-family: 黑体; color:#0158A7; font-size: 20px; text-decoration: none;}
+	.blue_20px a:visited { font-family: 黑体; color:#0158A7; font-size: 20px; text-decoration: none;}
+	.blue_20px a:hover{ font-family: 黑体; color:#BA2636; font-size: 20px; text-decoration: none;}
+	.blue_20px a:active{ font-family: 黑体; color:#0158A7; font-size: 20px; text-decoration: none;}
+.news_read_20px{ font-size:20px; color:#CD0000; font-family:黑体; line-height:30px;}
+	.news_read_20px a:link{ color:#CD0000; font-family:黑体; line-height:30px; text-decoration:none;}
+	.news_read_20px a:visited{ color:#CD0000; font-family:黑体; line-height:30px; text-decoration:none;}
+	.news_read_20px a:hover{ color:#BA2636; font-family:黑体; line-height:30px; text-decoration:none;}
+	.news_read_20px a:active{ color:#CD0000; font-family:黑体; line-height:30px; text-decoration:none;}
+
+/*18号字体*/
+.blue_18px{ font-size:18px; font-family:黑体; color:#004276; line-height:30px;}
+	.blue_18px a:link{ font-size:18px; font-family:黑体; color:#004276; line-height:30px; text-decoration:none;}
+	.blue_18px a:visited{ font-size:18px; font-family:黑体; color:#004276; line-height:30px; text-decoration:none;}
+	.blue_18px a:hover{ font-size:18px; font-family:黑体; color:#004276; line-height:30px; text-decoration:none;}
+	.blue_18px a:active{ font-size:18px; font-family:黑体; color:#004276; line-height:30px; text-decoration:none;}
+
+/*导航样式*/
+a.list:link {font-size: 14px;font-weight: bold;text-decoration: none;color: #ffffff;}
+a.list:visited {font-size: 14px;text-decoration: none;color: #FFFFFF;font-weight: bold;}
+a.list:hover {color: #FF9900;font-weight: bold;text-decoration: none;}
+
+/*14号字体*/
+.red14 {text-decoration: none;color:#FF0000; font-size:14px;}
+.red14 a:link {text-decoration: none;color:#FF0000;font-size:14px;}
+.red14 a:visited {text-decoration: none;color: #FF0000;font-size:14px;}
+.red14 a:hover {color: #BA2636;text-decoration: none;font-size:14px;}
+
+.red14_bold{font-size: 14px;text-decoration: none;line-height: 22px;color: #FF0000;}
+.red14_bold a:link {font-size: 14px;text-decoration: none;line-height: 22px;color: #FF0000;font-weight: bold;}
+.red14_bold a:visited {font-size: 14px;line-height: 22px;text-decoration: none;color: #FF0000;font-weight: bold;}
+.red14_bold a:hover {color: #BA2636;text-decoration: none;font-size: 14px;font-weight: bold;line-height: 22px;}
+
+.blue14_bold {font-size: 14px;color: #213572;text-decoration: none;font-weight: bold;}
+.blue14_bold a:link {font-size: 14px;color: #213572;text-decoration: none;font-weight: bold;}
+.blue14_bold a:visited {font-size: 14px;color: #213572;text-decoration: none;font-weight: bold;}
+.blue14_bold a:hover {font-size: 14px;color: #BA2636;text-decoration: none;font-weight: bold;}
+
+.blue14{ font-size: 14px;color: #213572;text-decoration: none;}
+.blue14 a:link {font-size: 14px;color: #213572;text-decoration: none;}
+.blue14 a:visited {font-size: 14px;color: #213572;text-decoration: none;}
+.blue14 a:hover {font-size: 14px;color: #BA2636;text-decoration: none;}
+
+.blue14_de a:link {font-size: 14px;color: #213572;text-decoration: underline;}
+.blue14_de a:visited {font-size: 14px;color: #213572;text-decoration: underline;}
+.blue14_de a:hover {font-size: 14px;color: #BA2636;text-decoration: underline;}
+
+.black14_bold{font-size: 14px;color: #000000;text-decoration: none;font-weight: bold;}
+.black14_bold a:link {font-size: 14px;color: #000000;text-decoration: none;font-weight: bold;}
+.black14_bold a:visited {font-size: 14px;color: #000000;text-decoration: none;font-weight: bold;}
+.black14_bold a:hover {font-size: 14px;color: #BA2636;text-decoration: none;font-weight: bold;}
+
+.black12_bold{font-size: 12px;color: #000000;text-decoration: none;font-weight: bold;}
+.black12_bold a:link {font-size: 12px;color: #000000;text-decoration: none;font-weight: bold;}
+.black12_bold a:visited {font-size: 12px;color: #000000;text-decoration: none;font-weight: bold;}
+.black12_bold a:hover {font-size: 12px;color: #BA2636;text-decoration: none;font-weight: bold;}
+
+.black1480_bold{font-size: 14px;color: #808080;text-decoration: none;font-weight: bold;}
+.black1480_bold a:link {font-size: 14px;color: #808080;text-decoration: none;font-weight: bold;}
+.black1480_bold a:visited {font-size: 14px;color: #808080;text-decoration: none;font-weight: bold;}
+.black1480_bold a:hover {font-size: 14px;color: #808080;text-decoration: none;font-weight: bold;}
+
+
+.gray14_bold a:link {font-size: 14px;color: #5A5A5A;text-decoration: none;font-weight: bold;}
+.gray14_bold a:visited {font-size: 14px;color: #5A5A5A;text-decoration: none;font-weight: bold;}
+.gray14_bold a:hover {font-size: 14px;color: #BA2636;text-decoration: none;font-weight: bold;}
+
+.white14 {font-size: 14px;color: #ffffff;text-decoration: none;}
+.white14 a:link {font-size: 14px;color: #ffffff;text-decoration: none;}
+.white14 a:visited {font-size: 14px;color: #ffffff;text-decoration: none;}
+.white14 a:hover {font-size: 14px;color: #ffffff;text-decoration: none;}
+
+.white14_bold {font-size: 14px;color: #ffffff;text-decoration: none; font-weight:bold}
+.white14 a:link {font-size: 14px;color: #ffffff;text-decoration: none; font-weight:bold}
+.white14 a:visited {font-size: 14px;color: #ffffff;text-decoration: none; font-weight:bold}
+.white14 a:hover {font-size: 14px;color: #ffffff;text-decoration: none; font-weight:bold}
+
+.black14_363636{font-size: 14px;color: #363636;}
+.black14_363636 a:link {font-size: 14px;color: #363636;}
+.black14_363636 a:visited {font-size: 14px;color: #363636;}
+.black14_363636 a:hover {font-size: 14px;color: #BA2636;}
+
+.black12_ce{font-size: 12px;color: #a6a6a6;}
+.black12_ce a:link {font-size: 12px;color: #a6a6a6;}
+.black12_ce a:visited {font-size: 12px;color: #a6a6a6;}
+.black12_ce a:hover {font-size: 12px;color: #a6a6a6;}
+
+.black12_52{font-size: 12px;color: #525252;}
+.black12_52 a:link {font-size: 12px;color: #525252;}
+.black12_52 a:visited {font-size: 12px;color: #525252;}
+.black12_52 a:hover {font-size: 12px;color: #525252;}
+
+.top_menu_read14px{ color:#90023B; font-size:14px;}
+                                                                                                                                                         
+.blue14qian_bold{font-size:14px;color: #5A9FD6;text-decoration: none;font-weight: bold;}
+	.blue14qian_bold:link {font-size:14px;color: #5A9FD6;text-decoration: none;font-weight: bold;}
+	.blue14qian_bold:visited {font-size:14px;color: #5A9FD6;text-decoration: none;font-weight: bold;}
+	.blue14qian_bold:hover {font-size:14px;color: #FF6600;text-decoration: none;font-weight: bold;}
+.submenu_font{ font-family:宋体; font-size:14px; color:#163A76; font-weight: bold;}
+	.submenu_font a:link{ font-size:14px; color:#163A76; font-weight: bold; text-decoration:none;}
+	.submenu_font a:visited{ font-size:14px; color:#163A76; font-weight: bold; text-decoration:none;}
+	.submenu_font a:hover{ font-size:14px; color:#163A76; font-weight: bold; text-decoration:none;}
+	.submenu_font a:active{ font-size:14px; color:#163A76; font-weight: bold; text-decoration:none;}
+
+.font_news_black_14px{ font-size:14px; font-family:宋体; color:#2C2C2A; font-weight: normal; line-height:22px;}
+	.font_news_black_14px a:link { font-family: 宋体; color:#2C2C2A; font-size: 14px; text-decoration: none;line-height:22px}
+	.font_news_black_14px a:visited{ font-family:宋体; color:#2C2C2A; font-size:14px; text-decoration:none;line-height:22px}
+	.font_news_black_14px a:hover{ font-family:宋体; color:#2C2C2A; font-size:14px; text-decoration:none;line-height:22px}
+	.font_news_black_14px a:active{ font-family:宋体; color:#2C2C2A; font-size:14px; text-decoration:none;line-height:22px}
+.font_news_blue{font-family:宋体; color:#0257A8; font-size:14px; text-decoration:none; line-height:22px;}
+	.font_news_blue a:link { font-family: 宋体; color:#0257A8; font-size: 14px; text-decoration: none; line-height:22px;}
+	.font_news_blue a:visited{ font-family:宋体; color:#0257A8; font-size:14px; text-decoration:none; line-height:22px;}
+	.font_news_blue a:hover{ font-family:宋体; color:#0257A8; font-size:14px; text-decoration:none; line-height:22px;}
+	.font_news_blue a:active{ font-family:宋体; color:#0257A8; font-size:14px; text-decoration:none; line-height:22px;}
+
+/*12号字体*/
+.font_time{ color:#979797; font-size:12px;}
+.font_more{ color:#6A6A6A; font-size:12px;}
+	.font_more a:link{color:#6A6A6A;  text-decoration: none;}
+    .font_more a:visited{ color:#6A6A6A;  text-decoration: none;}
+    .font_more a:hover{color:#BA2636;  text-decoration: none;}
+    .font_more a:active{color:#6A6A6A; text-decoration: none;}
+.font_more_index{ font-size:12px; color:#557994;}
+	.font_more_index a:link{color:#557994; text-decoration: none; }
+	.font_more_index a:visited{color:#557994; text-decoration: none;}
+	.font_more_index a:hover{ color:#BA2636;text-decoration: none;}
+	.font_more_index a:active{color:#557994; text-decoration: none;}
+.cj_news_read12px{ color:#ff0000; font-size:12px; }
+	.cj_news_read12px a:link{ color:#ff0000; text-decoration:none; font-size:12px; }
+	.cj_news_read12px a:visited{ color:#ff0000;  text-decoration:none; font-size:12px; }
+	.cj_news_read12px a:hover{ color:#BA2636; text-decoration:none; font-size:12px; }
+	.cj_news_read12px a:active{ color:#ff0000;  text-decoration:none; font-size:12px; }
+.top_menu_read12px{ color:#90023B; font-size:12px; }
+	.top_menu_read12px a:link{ color:#90023b;  text-decoration:none;}
+	.top_menu_read12px a:visited{ color:#90023b;  text-decoration:none;}
+	.top_menu_read12px a:hover{ color:#BA2636;  text-decoration:none;}
+	.top_menu_read12px a:active{ color:#90023b;  text-decoration:none;}
+.top_menu_blue12px{ color:#0D4171; font-size:12px;}
+	.top_menu_blue12px a:link{ color:#0D4171; text-decoration:none;}
+	.top_menu_blue12px a:visited{ color:#0D4171; text-decoration:none;}
+	.top_menu_blue12px a:hover{ color:#BA2636; text-decoration:none;}
+	.top_menu_blue12px a:active{ color:#0D4171; text-decoration:none;}
+.font_cj_black_12px{ color:#333333;text-decoration:none; line-height:20px; font-size:12px; font-weight:normal; }
+	.font_cj_black_12px a:link { color:#333333;text-decoration: none; line-height:20px; }
+	.font_cj_black_12px a:visited{  color:#333333; text-decoration:none; line-height:20px; }
+	.font_cj_black_12px a:hover{  color:#BA2636; text-decoration:none; line-height:20px; }
+	.font_cj_black_12px a:active{  color:#333333; text-decoration:none; line-height:20px; }
+.font_news_black_12px{ color:#666666;text-decoration:none; line-height:20px; font-size:12px; }	
+.font_cjhot_black_12px{ color:#333333;text-decoration:none; line-height:22px; font-size:12px; font-weight:normal; }
+	.font_cjhot_black_12px a:link { color:#333333;text-decoration: none; line-height:22px; }
+	.font_cjhot_black_12px a:visited{  color:#333333; text-decoration:none; line-height:22px; }
+	.font_cjhot_black_12px a:hover{  color:#BA2636; text-decoration:none; line-height:22px; }
+	.font_cjhot_black_12px a:active{  color:#333333; text-decoration:none; line-height:22px; }
+.font_news_black_12px{ color:#666666;text-decoration:none; line-height:20px; font-size:12px; }	
+.searchnews_class{ font-size:12px; color:#666666; font-weight:normal;}
+	.searchnews_class a:link{ color:#666666; text-decoration:none; line-height:20px;}
+	.searchnews_class a:visited{ color:#666666; text-decoration:none; line-height:20px;}
+	.searchnews_class a:hover{ color:#666666; text-decoration:none; line-height:20px;}
+	.searchnews_class a:active{ color:#666666; text-decoration:none; line-height:20px;}
+.black12_363636{font-size: 12px;color: #363636;}
+	.black12_363636 a:link {font-size: 12px;color: #363636;}
+	.black12_363636 a:visited {font-size: 12px;color: #363636;}
+	.black12_363636 a:hover {font-size: 12px;color: #BA2636;}
+.fontindex_class12px{ font-size:12px; color:#003389; font-weight:normal;}
+	.fontindex_class12px a:link{ color:#003389; text-decoration:none; line-height:20px;}
+	.fontindex_class12px a:visited{ color:#003389; text-decoration:none; line-height:20px;}
+	.fontindex_class12px a:hover{ color:#90023b; text-decoration:underline; line-height:20px;}
+	.fontindex_class12px a:active{ color:#90023b; text-decoration:underline; line-height:20px;}
+.fontindex_class12px_b{ font-size:12px; color:#000; font-weight:bold;}
+.search_newspage_font{ font-family: 宋体; font-size: 12px; color:#041C4A;}
+	.search_newspage_font a:link{font-family: 宋体; font-size: 12px; color:#fff; }
+	.search_newspage_font a:visited{ font-family: 宋体; font-size: 12px; color:#fff; }
+	.search_newspage_font a:hover{ font-family: 宋体; font-size: 12px; color:#fff; background-color: #FF7300;}
+	.search_newspage_font a:active{font-family: 宋体; font-size: 12px; color:#213572;}
+.font_cj_news_12px{ font-family:宋体; color:#0257A8; font-size:12px; text-decoration:none; }
+	.font_cj_news_12px a:link { font-family: 宋体; color:#0257A8; font-size: 12px; text-decoration: none;}
+	.font_cj_news_12px a:visited{ font-family:宋体; color:#0257A8; font-size:12px; text-decoration:none;}
+	.font_cj_news_12px a:hover{ font-family:宋体; color:#0257A8; font-size:12px; text-decoration:none;}
+	.font_cj_news_12px a:active{ font-family:宋体; color:#0257A8; font-size:12px; text-decoration:none;}
+	
+.black12_444444{color: #444; font-size:12px;}
+.black12_444444 a:link{color: #444;}
+.black12_444444 a:visited{color: #444;}
+.black12_444444 a:hover{color: #BA2636;}
+
+
+.red12_bold{ font-weight:bold;text-decoration: none;color:#FF0000; font-size:12px;}
+.red12_bold a:link {font-weight:bold;text-decoration: none;color:#FF0000;}
+.red12_bold a:visited {text-decoration: none;color: #FF0000;font-weight:bold;}
+.red12_bold a:hover {color: #BA2636;font-weight:bold;text-decoration: none;}
+
+.red12 {text-decoration: none;color:#FF0000; font-size:12px;}
+.red12 a:link {text-decoration: none;color:#FF0000;}
+.red12 a:visited {text-decoration: none;color: #FF0000;}
+.red12 a:hover {color: #BA2636;text-decoration: none;}
+
+
+
+.red12_de {text-decoration:none;color:#FF0000;border-bottom:1px solid #ff0000; padding-bottom:0.2px; font-size:12px;}
+.red12_de a:link {text-decoration:none;color:#FF0000;border-bottom:1px solid #ff0000; padding-bottom:0.2px;}
+.red12_de a:visited {text-decoration:none;color: #FF0000;border-bottom:1px solid #ff0000; padding-bottom:0.2px;}
+.red12_de a:hover {color: #BA2636;text-decoration:none;border-bottom:1px solid #ff0000; padding-bottom:0.2px;}		
+
+.blue12_bold {color: #213572;text-decoration: none;font-weight: bold; font-size:12px;}
+.blue12_bold a:link {color: #213572;text-decoration: none;font-weight: bold;}
+.blue12_bold a:visited {color: #213572;text-decoration: none;font-weight: bold;}
+.blue12_bold a:hover {color: #BA2636;text-decoration: none;font-weight: bold;}
+
+.blue12{color: #213572;text-decoration: none; font-size:12px;}
+.blue12 a:link {color: #213572;text-decoration: none;}
+.blue12 a:visited {color: #213572;text-decoration: none;}
+.blue12 a:hover {color: #BA2636;text-decoration: none;}
+
+.blue12_de{color: #213572;text-decoration: underline; font-size:12px;}
+.blue12_de a:link {color: #213572;text-decoration: underline;}
+.blue12_de a:visited {color: #213572;text-decoration: underline;}
+.blue12_de a:hover {color: #BA2636;text-decoration: underline;}
+	
+.white12{color:#FFFFFF; font-size:12px}
+.white12 a:link{color: #FFFFFF;font-size:12px}
+.white12 a:visited{color: #FFFFFF;font-size:12px}
+.white12 a:hover{color: #FFFFFF; text-decoration:underline;font-size:12px}
+
+.blue12_0068B7{ color:#0068B7}
+.blue12_0068B7 a:link{ color:#0068B7}
+.blue12_0068B7 a:visited{ color:#0068B7}
+.blue12_0068B7 a:hover{ color:#0068B7}
+.blue12_0068B7 a:active{ color:#000000}
+
+
+.lc{color:#000000}
+.lc a:link{color:#000000}
+.lc a:visited{color:#ff6600}
+/*文字样式*/
+.black14_8b_nolink{ font-size:14px; color:#8b8b8b;}
+.white12{color: #FFFFFF;}
+.red14_nolink{color:#FF0000; font-size:14px;}
+.blue14_nolink{color:#213572; font-size:14px;}
+.black14_bold_nolink{color:#000000; font-size:14px; font-weight:bold;}
+.zi_12{ font-size:12px;color:#91013E;}
+.zi_14{ font-size:14px;color:#91013E;}
+.lan_12{font-size:12px;color:#213572;}
+
+/*链接12号红色粗体*/
+
+/*链接12号红色*/
+
+/*链接14号红色*/
+
+/*链接12号蓝色粗体#213572*/
+
+/*链接12号蓝色#213572*/
+
+/*链接14号蓝色粗体#213572*/
+
+/*链接14号蓝色#213572*/
+
+/*链接14号蓝色下划线#213572*/
+
+/*链接14号黑粗体色*/
+
+/*链接14号白色*/
+
+/*链接14号灰色#5a5a5a*/
+	

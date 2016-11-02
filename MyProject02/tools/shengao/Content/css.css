@@ -1,0 +1,37 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+input,button,select,textarea{outline:none}
+textarea{resize:none}
+ul{ padding:0; margin:0;}
+ul li{ list-style:none; padding:0; margin:0;cursor:pointer;}
+img{ border:0; position:relative; vertical-align:middle; margin:0 5px; cursor:pointer;}
+.clear{ height:0; overflow:hidden; clear:both;}
+
+#channelNav{ width:960px;}
+#head{ border-bottom:5px solid #ccc; width:950px; margin:0 auto}
+#content{ width:1100px; margin:0 auto; overflow:hidden; padding:30px;}
+
+.hbb_1,.bt_2{font-size:16px;text-align: left;}
+.bt_3,.bt_4,.bt_5{ text-align: left;background:url(../Images/yybj.jpg) 50% 0 no-repeat; padding-top:30px; font-size:16px; clear:left;}
+.hbb_1 .float001{ float:left;color:#000}
+.hbb_1 .float002{ float:right;  background:url(../Images/zzsy_bj.gif) no-repeat; width:320px; height:46px; font-size:16px; line-height:40px; margin-right:10px; padding-left:15px;}
+.hbb_1 .float002 p{ margin-left:13px;letter-spacing:13px; color:#FFF;width:297px; text-align:right; position:relative; *margin:-40px -5px 0 0 }
+:root body .hbb_1 .float002 span{letter-spacing:13px; position:absolute;width:196px}
+
+.content_1{ background:url(../Images/sy_sg.gif) no-repeat; height:122px;}
+.content_1 span{text-align: left; display:inline-block; color:#959595;margin-left:100px; margin-top:20px;height:60px; overflow:hidden; font-size:14px;}
+
+/* tool height */
+.toolheight_up927{border:1px #E089A8 solid; width:928px; margin:0 auto;background:#F6BDD1; padding:10px;margin-top:20px}
+.height_hbb{border:1px #F4BACE solid; width:908px; margin:0 auto;background:#FEF1F5; padding:20px 10px 0;}
+
+.height_hbb p{height:40px;line-height:30px;text-align:left;padding-left:300px;font-size:14px; vertical-align:middle; position:relative;}
+.height_hbb p input.inputN{border:1px #ccc solid; background:#fff;width:200px;height:30px;padding:0 5px; line-height:30px; float:left; margin:0 5px}
+.height_hbb p span{line-height:30px; padding:0; display:inline-block;float:left; font-family:"\5FAE\8F6F\96C5\9ED1"}
+.height_hbb  span{color:#F50F56 ; font:18px/20px Arial;padding:0 10px}
+.height_hbb p.jg{margin-top:20px; font-size:16px}
+.height_hbb p.jg span{ float:none;}
+.height_hbb p.ja{padding-top:20px;border-top:1px #F6BDD1 solid ;}
+
+

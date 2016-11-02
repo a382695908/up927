@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+<meta charset="UTF-8">
+<title>angularJs_test1</title>
+<!-- <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet"type="text/css" /> -->
+</head>
+<body>
+121212
+<div ng-controller='drinkCtrl'>
+    <drink flavor='{{dName}}'></drink>
+
+    <br/><br/>
+    <input type="text"  ng-model='dName'></input>
+    <drink2 flavor='dName'></drink2>
+
+    <br/><br/>
+    <drink3 dgreet='greeting(name)'></drink3>
+    <drink3 dgreet='greeting(name)'></drink3> 
+
+    <div ddd="{{dName}}">
+        <p>dfdfdfdf</p>
+    </div>
+
+
+</div>
+
+<br/><br/>
+<form name='myForm' ng-controller='myFormCtrl' ng-submit='login()'>
+    <input type="text" ng-model='username' required></input>
+    <input type="password" ng-model='password' required></input>
+    <input type="submit" ng-disabled='myForm.$invalid' ></input>
+</form>
+
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script src="js/test2.js"></script>
+</body>
+</html>

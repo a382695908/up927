@@ -1,0 +1,17 @@
+﻿
+<div class="foot_box">
+    <div class="foot_content">
+        <ul>
+            <li><font style=" font-size:16px;">本站提供分享</font> <h3>母婴知识 | 儿童早教 | 青岛早教 | 育儿知识 | 生活常识 | 轻松一刻 | 谈天说地 | 宝妈理财工具 | 12星座运势 | 12生肖运势</h3></li>
+            <li>站长QQ：3224261934&nbsp;&nbsp;邮箱：3224261934@qq.com </li>
+            <li>Copyright 2015-2016  好宝宝&nbsp;&nbsp;鲁ICP备15001975号-2</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+.foot_box{ width:100%; border-top:1px solid #ccc; background:#FFFFF0; text-align:center; color:#666; font-family:"微软雅黑"; padding:0; margin-top:10px;}
+.foot_content{ margin:0 auto; width:1100px; font-size:14px;}
+.foot_content h3{ font-size:16px; font-weight:300; }
+.foot_content li{ margin-top:2px;}
+</style>

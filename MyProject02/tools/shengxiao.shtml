@@ -1,0 +1,270 @@
+﻿<!doctype html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>宝宝12生肖运势_好宝宝早教网</title>
+<meta name="keywords" content="12生肖运势,生肖星座,12生肖属性" />
+<meta name="description" content="12生肖运势，生肖星座，12生肖属性。" />
+<link href="/css/css2.css" rel="stylesheet" type="text/css"/>
+<script src="/js/jquerym.js" type="text/javascript"></script>
+<script src="/js/tools/shengxiao.js" type="text/javascript"></script>
+</head> 
+<body>
+<!--百度统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?138a328660e33c71bad7bfcceaa1e08f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--百度提交代码-->
+<script>
+    (function() {
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+<!--头部-->
+<!--#include virtual="/userControl/head_utf8.html"-->
+
+<div style="width:960px; margin:0 auto; margin-top:20px; height:auto; background:#fff;font-family:'微软雅黑';">
+<div class="about_left f16_666" style=" margin-top:10px;">
+<ul>
+<li style="background-position:190px center;"><a href="/tools/xingzuo.shtml">12星座运势</a></li>
+<li style="background-position:190px center;" class="about_navbg01">十二生肖运势</li>
+</ul>
+</div>
+<div style="float:left; width:600px; padding-left:30px;">
+<div style="padding:10px 0; font-size:21px; color:#ff6347;"><h1 style="font-size:23px; font-weight:lighter;">宝宝12生肖运势</h1></div>
+<div class="about_right">
+<div style="clear:both;"></div>
+
+<div id="div_shu_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout='Set12("div_shu");' onclick="ShowXingzuo('鼠')">子鼠</div>
+<div id="div_niu_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout="Set12('div_niu');" onclick="ShowXingzuo('牛')">丑牛</div>
+<div id="div_hu_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout="Set12('div_hu');" onclick="ShowXingzuo('虎')">寅虎</div>
+<div id="div_tu_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout="Set12('div_tu');" onclick="ShowXingzuo('兔')">卯兔</div>
+<div id="div_long_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout="Set12('div_long');" onclick="ShowXingzuo('龙')">辰龙</div>
+<div id="div_she_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout="Set12('div_she');" onclick="ShowXingzuo('蛇')">巳蛇</div>
+<div style="clear:both;"></div>
+</br>
+<div id="div_ma_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout="Set12('div_ma');" onclick="ShowXingzuo('马')">午马</div>
+<div id="div_yang_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout="Set12('div_yang');" onclick="ShowXingzuo('羊')">未羊</div>
+<div id="div_hou_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout="Set12('div_hou');" onclick="ShowXingzuo('猴')">申猴</div>
+<div id="div_ji_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout="Set12('div_ji');" onclick="ShowXingzuo('鸡')">酉鸡</div>
+<div id="div_gou_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout="Set12('div_gou');" onclick="ShowXingzuo('狗')">戌狗</div>
+<div id="div_zhu_12" class="xingzuo_12" style="float:left;" align="center" onmouseover="this.className='xingzuo_12_1'" onmouseout="Set12('div_zhu');" onclick="ShowXingzuo('猪')">亥猪</div>
+
+<div id="div_shu" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_01.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>鼠宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属水</strong>
+</p>
+<p>
+    　　生肖鼠是最为聪明的生肖之一，爱动脑，爱走捷径是生肖鼠的天性，大多生肖鼠是靠智慧吃饭的，性格柔和，不愿与人为敌，感情细腻,是一个生活浪漫主义者，与人相处比较融洽，是一个比较好的休闲伴侣。
+</p>
+<p>
+    　　<strong>优点</strong>
+</p>
+<p>
+    　　觉力强，反应快，有很强的环境适应力和应变能力。机智、点子多，善解人意。有一副乐天命的模样。多才多艺。女性特别喜爱乾净，会将家务整理得有条不紊。伶俐乖巧，具有样样都学的灵巧和乐天性格。个性比较活跃多变化且利欲心强。富幻想力，识时务，很会利用机会，爽朗活泼，讨人喜爱。属鼠人感觉敏锐无所不能而且善於多角经营。好奇心强对任何事情都想很快插上一手且能巧妙地处理。
+</p>
+<p>
+    　　<strong>缺点</strong>
+</p>
+<p>
+    　　缺乏胆识、做事魄力不够，缺适当指挥能力，不足以担任商业机构或其他团体之领导，欠威严。有固执已见之性格，有见利妄行之缺点。有晚睡习惯，因为鼠是夜间活动的动物。本性善良但态度有些不礼貌。具自私的本位主义或桀傲不驯的个性。善於投机取巧，爱挑剔，心胸不够远大。【以上各项缺点经修持是可以克服的。】
+</p>
+</div>
+
+<div id="div_niu" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_02.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>牛宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属土</strong>
+</p>
+<p>
+    　　老黄牛的性格，在生肖牛身上表现的非常明显，兢兢业业、脚踏实地是生肖牛的最大特点，你要是和生肖牛合伙做事，他那纯朴、不愿伪装表面，会让你不忍心去伤害他，富于耐性，勤劳，努力坚毅的习惯，让生肖牛是一个最好拍档。
+</p>
+<p>
+    　　<strong>性格</strong>：沉默寡言，为人正直，纯朴，不愿伪装表面，富于耐性的同情心，具有勤劳，努力、坚毅的习惯，思考力强，坚持己见，容易失去益友，有老大气概，做事很精细，晚年将鸿图大展。
+</p>
+<p>
+    　　<strong>爱情</strong>：典型的现实主义者，缺少罗曼蒂克情调，个性不够潇洒，女性具有容忍性格及母爱。
+</p>
+<p>
+    　　<strong>运气</strong>：节约自俭、晚年头角峥嵘，财运享通，种瓜得瓜，种豆得豆。
+</p>
+<p>
+    　　<strong>忠告</strong>：有我行我素的强烈性格，行动往往偏激，故要心胸开阔，集思广益，不可独断专行。
+</p>
+<p>
+    　　<strong>职业</strong>：律师、作家、社会工作者。
+</p>
+</div>
+
+<div id="div_hu" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_03.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>虎宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属木</strong>
+</p>
+<p>
+    　　生肖虎有者虎王的霸气，不管他遇见任何事情，都不会抛你于不顾，敢作敢当，遇事敢于冲锋陷阵，生性豪爽,富于正义感，讲道理，外刚内柔，有组织的才能，是他的最大优势，你要是和生肖虎在一起，你会有一种安全感，所有是你值得依赖的生肖之一。
+</p>
+<p>
+    　　<strong>优点</strong>
+</p>
+<p>
+    　　个性较为固执强硬专断独行，喜冒险逞强，越挫越猛，雄心万丈，对自己充满信心。富男子气慨且热情勇敢，冒险精神过於常人。做事积极大胆表达自己，处事有霸道。一言九鼎说到做到，绝不反悔。喜爱活动好出风头有侠义心肠，性情坦白磊落容易蠃得信任。肖虎者外表不怒而威深具自信，属领导型人物，性格刚毅顽强永不低头，凡事不完成绝不甘休，凡领导之职务皆可适任。对任何事不善先作准备他们不会把东西囤集起来以备将来不时之需。属虎的人天生喜欢接受挑战，不喜服从别人却要别人服从他们。
+</p>
+<p>
+    　　<strong>缺点</strong>
+</p>
+<p>
+    　　颇具叛逆性往往过於自信无法与他人协调沟通，喜欢独来独往，经常表现极瑞性。缺乏浪漫情调，对待妻子也使用独裁手腕，缺乏愉快的家庭生活。相识虽广但都无法深交，固执己见，为达目的不择手段，专横霸道，喜欢剌激，自我意识强。投资方面喜欢短期内即能回收者。过长时则不感与趣。乡村家畜生产时不让肖虎者看，因为他的磁场会令畜母感到不安而会吃幼子以示抗拒。【以上各项缺点经修持是可以克服的。】
+</p>
+</div>
+
+<div id="div_tu" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_04.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>兔宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属木</strong>
+</p>
+<p>
+    　　生肖兔，是比较圆滑的生肖，不管有啥事，他总能圆滑的处理有条不紊，为人乐观、快活，追求时尚，前卫，随和，容易接受新鲜事物，是比较喜欢创新发展的生肖，和生肖兔在一起，比较难处理的事情，棘手的事情，你就让他去办，大多会有比较圆满的结果。
+</p>
+</div>
+
+<div id="div_long" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_05.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>龙宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属土</strong>
+</p>
+<p>
+    　　生肖龙是个大生肖，外表刚毅，有强烈的向上心，属聪明才智型，富于热情，其实内心有极强的仁侠骨气，亲切而处处为人着想。生肖龙私心不大，万事都会站到别人的立场上去考虑，和他交朋友，大多不用担心被涮被骗，是比较放心的生肖之一。
+</p>
+</div>
+
+<div id="div_she" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_06.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>蛇宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属火</strong>
+</p>
+<p>
+    　　委婉，理智，游刃有余是生肖蛇的最大特性，能大能小，能曲能伸具有周密的思考力，立定志愿后必勇往迈进，智能高，研究心强，热心探索未知的世界，具有审美感，是具有领导和艺术的天才。你身边要是有个属蛇的朋友，那么他一定会给你带来很多影响和激情，让你的生活更加丰富多彩。
+</p>
+</div>
+
+<div id="div_ma" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_07.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>马宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属火</strong>
+</p>
+<p>
+    　　生肖马是个人情味最重的生肖之一，本身有高瞻远瞩本领，对亲情和朋友，绝对是用心呵护，宁愿自己吃亏委屈绝对不会委屈身边的亲人和朋友，为人豪爽、活泼、直感力，推断力强，头脑灵活、机警迅速，对任何事都很坦率，正直，所以生肖马比较得人心，大部分有成就的领导人员，生肖马的居多。
+</p>
+</div>
+
+<div id="div_yang" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_08.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>羊宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属土</strong>
+</p>
+<p>
+    　　生肖羊生性聪明善于理财，不愿意改变现状，做事比较有耐心，看准目标会从一而终，是比较厚道，诚信的，柔和而稳重，重仁义而好人缘，是比较好交往的生肖，不管到哪里，有生肖羊陪伴你，会让你花最少的钱，办最大的事。
+</p>
+</div>
+
+<div id="div_hou" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_09.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>猴宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属金</strong>
+</p>
+<p>
+    　　生肖猴是最聪明最好动的生肖，善于动脑筋，善于在动态中把握机会，是生肖猴的最大特点，性格幽默、机智、活泼、在多方面的才能智商超越人群、人缘好、手灵活，开放的性格，无论是在事业上，或者是在休闲游玩中，有生肖猴就能欢乐多多。
+</p>
+</div>
+
+<div id="div_ji" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_10.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>鸡宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属金</strong>
+</p>
+<p>
+    　　生肖鸡是非常时尚，前卫，容易接受新鲜事物，有独到眼光和魅力，表现力强，能注意到事务发展细节和规律，为人温和、谦虚而谨慎、有强烈的经济观念，擅长理财，有良好的审美时尚感，有生肖鸡陪伴你会永远站在时尚的前沿，永远不会被现实所淘汰。
+</p>
+</div>
+
+<div id="div_gou" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_11.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>狗宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属土</strong>
+</p>
+<p>
+    　　狗狗是忠诚的使者，人们想起生肖狗，都会认为，他是最忠诚的朋友，你和生肖狗在一起，一旦建立起深厚的友谊，他就可能是你终身的朋友，不管你是贫穷，还是富有，他都会对你忠贞不渝，不管你有什么需求，只有他条件允许，他就会为你赴汤蹈火。
+</p>
+</div>
+
+<div id="div_zhu" class="xingzuo_desc">
+<div><img src="/images/12shengxiao/12shengxiao_painter_12.png"/></div>
+<p style=" margin-bottom:10px;">
+    <font>猪宝宝</font>
+</p>
+<p style="margin-bottom:10px;">
+    五行：<strong>属水</strong>
+</p>
+<p>
+    　　猪猪天资聪慧，忠厚实在，重情重义，性情温和，一向很有人缘，对于自己喜欢的人，非常迁就随和，愿意付出，和生肖猪在一起的朋友会感觉舒心，自在，没有压力。
+</p>
+</div>
+
+</div>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<div style="clear:both;"></div>
+<!--#include file="/userControl/foot_utf8.html"-->
+</body> 
+</html>
+
+
+
+
